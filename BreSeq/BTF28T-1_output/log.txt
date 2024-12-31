@@ -1,0 +1,4 @@
+Sun Dec  8 10:52:34 2024
+
+breseq -r BTF28T-2.gbff -o ./breseq/BTF28 ./trimmed_reads/BTF28T-1_R1-trimmed.fastq.gz ./trimmed_reads/BTF28T-1_R2-trimmed.fastq.gz
+

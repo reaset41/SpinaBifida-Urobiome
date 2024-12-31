@@ -1,0 +1,8 @@
+Sun Dec  8 10:47:27 2024
+
+breseq -r BTF15T-1.gbff -o ./breseq/BTF15 ./trimmed_reads/BTF15T1_R1-trimmed.fastq.gz ./trimmed_reads/BTF15T1_R2-trimmed.fastq.gz
+
+Sun Dec  8 10:52:34 2024
+
+breseq -r BTF15T-1.gbff -o ./breseq/BTF15 ./trimmed_reads/BTF15T1_R1-trimmed.fastq.gz ./trimmed_reads/BTF15T1_R2-trimmed.fastq.gz
+
