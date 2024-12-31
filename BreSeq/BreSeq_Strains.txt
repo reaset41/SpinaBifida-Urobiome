@@ -1,0 +1,7 @@
+ReferenceGenome	QueryGenome	DaysBetween	Reference_Genbank	Query_F_ReadFile	Query_R_ReadFile
+BTF1T1	BTF1T2	437	BTF1T1.gbff	BTF1T2_R1-trimmed.fastq.gz	BTF1T2_R2-trimmed.fastq.gz
+BTF6T1	BTF6T2	79	BTF6T1.gbff	BTF6T2_R1-trimmed.fastq.gz	BTF6T2_R2-trimmed.fastq.gz
+BTF15T-1	BTF15T1	811	BTF15T-1.gbff	BTF15T1_R1-trimmed.fastq.gz	BTF15T1_R2-trimmed.fastq.gz
+BTF28T-2	BTF28T-1	46	BTF28T-2.gbff	BTF28T-1_R1-trimmed.fastq.gz	BTF28T-1_R2-trimmed.fastq.gz
+BTF60T-3	BTF60T-1	305	BTF60T-3.gbff	BTF60T-1_R1-trimmed.fastq.gz	BTF60T-1_R2-trimmed.fastq.gz
+BTF60T-3	BTF60T-2	134	BTF60T-3.gbff	BTF60T-2_R1-trimmed.fastq.gz	BTF60T-2_R2-trimmed.fastq.gz
