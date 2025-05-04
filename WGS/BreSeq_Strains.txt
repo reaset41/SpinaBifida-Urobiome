@@ -1,0 +1,17 @@
+ReferenceGenome	QueryGenome	Species	Subject	DaysBetween	Reference_Genbank	Query_F_ReadFile	Query_R_ReadFile
+BTF1T1	BTF1T2	Ec	1	437	BTF1T1.gbff	BTF1T2_R1-trimmed.fastq.gz	BTF1T2_R2-trimmed.fastq.gz
+BTF2T1Ec	BTF2T2b	Ec	2	399	BTF2T1Ec.gbff	BTF2T2b_R1-trimmed.fastq.gz	BTF2T2b_R2-trimmed.fastq.gz
+BTF6T1	BTF6T2	Ec	6	79	BTF6T1.gbff	BTF6T2_R1-trimmed.fastq.gz	BTF6T2_R2-trimmed.fastq.gz
+BTF15T-1	BTF15T1	Kp	15	811	BTF15T-1.gbff	BTF15T1_R1-trimmed.fastq.gz	BTF15T1_R2-trimmed.fastq.gz
+BTF24T1	BTF24T2	Ec	24	411	BTF24T1.gbff	BTF24T2_R1-trimmed.fastq.gz	BTF24T2_R2-trimmed.fastq.gz
+BTF28T-2	BTF28T-1	Kp	28	46	BTF28T-2.gbff	BTF28T-1_R1-trimmed.fastq.gz	BTF28T-1_R2-trimmed.fastq.gz
+BTF37T1	BTF37T2	Ec	37	392	BTF37T1.gbff	BTF37T2_R1-trimmed.fastq.gz	BTF37T2_R2-trimmed.fastq.gz
+BTF37T1b	BTF37T2b	Ef	37	392	BTF37T1b.gbff	BTF37T2b_R1-trimmed.fastq.gz	BTF37T2b_R2-trimmed.fastq.gz
+BTF46T1	BTF46T2b	Pm	46	364	BTF46T1.gbff	BTF46T2b_R1-trimmed.fastq.gz	BTF46T2b_R2-trimmed.fastq.gz
+BTF60T-3	BTF60T-1	Ec	60	305	BTF60T-3.gbff	BTF60T-1_R1-trimmed.fastq.gz	BTF60T-1_R2-trimmed.fastq.gz
+BTF60T-3	BTF60T-2	Ec	60	134	BTF60T-3.gbff	BTF60T-2_R1-trimmed.fastq.gz	BTF60T-2_R2-trimmed.fastq.gz
+BTF60T1	BTF60T2	Ec	60	343	BTF60T1.gbff	BTF60T2_R1-trimmed.fastq.gz	BTF60T2_R2-trimmed.fastq.gz
+BTF69T-2	BTF69T-1	Ec	69	178	BTF69T-2.gbff	BTF69T-1_R1-trimmed.fastq.gz	BTF69T-1_R2-trimmed.fastq.gz
+BTF71T-3	BTF71T-2	Ec	71	126	BTF71T-3.gbff	BTF71T-2_R1-trimmed.fastq.gz	BTF71T-2_R2-trimmed.fastq.gz
+BTF74T-7	BF74T-6	Ec	74	69	BTF74T-7.gbff	BTF74T-6_R1-trimmed.fastq.gz	BTF74T-6_R2-trimmed.fastq.gz
+BTF75T-1	BTF75T1	Ec	75	602	BTF75T-1.gbff	BTF75T1_R1-trimmed.fastq.gz	BTF75T1_R2-trimmed.fastq.gz
