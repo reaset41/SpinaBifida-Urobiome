@@ -13,5 +13,5 @@ BTF60T-3	BTF60T-2	Ec	60	134	BTF60T-3.gbff	BTF60T-2_R1-trimmed.fastq.gz	BTF60T-2_
 BTF60T1	BTF60T2	Ec	60	343	BTF60T1.gbff	BTF60T2_R1-trimmed.fastq.gz	BTF60T2_R2-trimmed.fastq.gz
 BTF69T-2	BTF69T-1	Ec	69	178	BTF69T-2.gbff	BTF69T-1_R1-trimmed.fastq.gz	BTF69T-1_R2-trimmed.fastq.gz
 BTF71T-3	BTF71T-2	Ec	71	126	BTF71T-3.gbff	BTF71T-2_R1-trimmed.fastq.gz	BTF71T-2_R2-trimmed.fastq.gz
-BTF74T-7	BF74T-6	Ec	74	69	BTF74T-7.gbff	BTF74T-6_R1-trimmed.fastq.gz	BTF74T-6_R2-trimmed.fastq.gz
+BTF74T-7	BTF74T-6	Ec	74	69	BTF74T-7.gbff	BTF74T-6_R1-trimmed.fastq.gz	BTF74T-6_R2-trimmed.fastq.gz
 BTF75T-1	BTF75T1	Ec	75	602	BTF75T-1.gbff	BTF75T1_R1-trimmed.fastq.gz	BTF75T1_R2-trimmed.fastq.gz
