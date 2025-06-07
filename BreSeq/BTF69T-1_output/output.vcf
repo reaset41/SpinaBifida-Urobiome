@@ -1,0 +1,79 @@
+##fileformat=VCFv4.1
+##fileDate
+##source=breseq_GD2VCF_converterter
+##contig=<ID=contig_1,length=622859>
+##contig=<ID=contig_2,length=622077>
+##contig=<ID=contig_3,length=469135>
+##contig=<ID=contig_4,length=387242>
+##contig=<ID=contig_5,length=377071>
+##contig=<ID=contig_6,length=336053>
+##contig=<ID=contig_7,length=333620>
+##contig=<ID=contig_8,length=307923>
+##contig=<ID=contig_9,length=275941>
+##contig=<ID=contig_10,length=191115>
+##contig=<ID=contig_11,length=190808>
+##contig=<ID=contig_12,length=173576>
+##contig=<ID=contig_13,length=156260>
+##contig=<ID=contig_14,length=109397>
+##contig=<ID=contig_15,length=108987>
+##contig=<ID=contig_16,length=103792>
+##contig=<ID=contig_17,length=53255>
+##contig=<ID=contig_18,length=41392>
+##contig=<ID=contig_19,length=40293>
+##contig=<ID=contig_20,length=29791>
+##contig=<ID=contig_21,length=24499>
+##contig=<ID=contig_22,length=21996>
+##contig=<ID=contig_23,length=20179>
+##contig=<ID=contig_24,length=20177>
+##contig=<ID=contig_25,length=16053>
+##contig=<ID=contig_26,length=13795>
+##contig=<ID=contig_27,length=12460>
+##contig=<ID=contig_28,length=10937>
+##contig=<ID=contig_29,length=10522>
+##contig=<ID=contig_30,length=6245>
+##contig=<ID=contig_31,length=6097>
+##contig=<ID=contig_32,length=5167>
+##contig=<ID=contig_33,length=4873>
+##contig=<ID=contig_34,length=4123>
+##contig=<ID=contig_35,length=3300>
+##contig=<ID=contig_36,length=3169>
+##contig=<ID=contig_37,length=2583>
+##contig=<ID=contig_38,length=2532>
+##contig=<ID=contig_39,length=2354>
+##contig=<ID=contig_40,length=2101>
+##contig=<ID=contig_41,length=2069>
+##contig=<ID=contig_42,length=1885>
+##contig=<ID=contig_43,length=1577>
+##contig=<ID=contig_44,length=1457>
+##contig=<ID=contig_45,length=1271>
+##contig=<ID=contig_46,length=1259>
+##contig=<ID=contig_47,length=1209>
+##contig=<ID=contig_48,length=1150>
+##contig=<ID=contig_49,length=1030>
+##contig=<ID=contig_50,length=1018>
+##contig=<ID=contig_51,length=905>
+##contig=<ID=contig_52,length=821>
+##contig=<ID=contig_53,length=674>
+##contig=<ID=contig_54,length=576>
+##contig=<ID=contig_55,length=539>
+##contig=<ID=contig_56,length=511>
+##contig=<ID=contig_57,length=417>
+##contig=<ID=contig_58,length=386>
+##contig=<ID=contig_59,length=306>
+##INFO=<ID=AF,Number=A,Type=Float,Description="Allele Frequency">
+##INFO=<ID=AD,Number=1,Type=Float,Description="Allele Depth (avg read count)">
+##INFO=<ID=DP,Number=1,Type=Float,Description="Total Depth (avg read count)">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+contig_1	51619	.	A	G	1878.1	PASS	AF=1.0000;AD=506;DP=508
+contig_1	88480	.	A	T	2057.5	PASS	AF=1.0000;AD=578;DP=579
+contig_16	52339	.	G	A	1594.9	PASS	AF=1.0000;AD=452;DP=453
+contig_2	189679	.	GATGCCACTGTGCGTAATGCTGTCAATCTTGTTTATCTTTGGCTGGCGTGG	G	.	PASS	AF=1.0000;AD=483;DP=483
+contig_2	591625	.	T	TT	1564.6	PASS	AF=1.0000;AD=442;DP=447
+contig_22	4381	.	T	TT	1314.2	PASS	AF=1.0000;AD=376;DP=391
+contig_3	37805	.	A	G	1648.0	PASS	AF=1.0000;AD=445;DP=445
+contig_5	154225	.	G	A	1895.5	PASS	AF=1.0000;AD=534;DP=534
+contig_54	1	.	GCTCCACCGATTTTGAGAACGACAGCGACTTCCGTCCCAGCCGTGCCAGGTGCTGCCTCAGATTCAGGTTATGCCGCTCAATTCGCTGCGTATATCGCTTGCTGATTACGTGCAGCTTTCCCTTCAGGCGGGATTCATACAGCGGCCAGCCATCCGTCATCCATATCACCACGTCAAAGGGTGACAGCAGGCTCATAAGACGCCCCAGCGTCGCCATAGTGCGTTCACCGAATACGTGCGCAACAACCGTCTTCCGGAGCCTGTCATACGCGTAAAACAGCCAGCGCTGGCGCGATTTAGCCCCGACGTATCCCCACTGTTCGTCCATTTCCGCGCAGACGATGACGTCACTGCCCGGCTGTATGCGCGAGGTTACCGACTGCGGCCTGAGTTTTTTAAGTGACGTAAAATCGTGTTGAGGCCAACGCCCATAATGCGGGCTGTTGCCCGGCATCCAACGCCATTCATGGCCATATCAATGATTTTCTGGTGCGTACCGGGTTGAGAAGCGGTGTAAGTGAACTGCAGTTGCCATGTTTTACGGCAGTGAGAGCAGAGATAGCGCTGATGTCCGGCG	G	.	PASS	AF=1.0000
+contig_6	284870	.	A	C	1902.2	PASS	AF=1.0000;AD=506;DP=506
+contig_6	317253	.	G	GGCATGGCCTGGCG	.	PASS	AF=1.0000;AD=486;DP=559
+contig_8	252715	.	C	T	1820.9	PASS	AF=1.0000;AD=509;DP=509
