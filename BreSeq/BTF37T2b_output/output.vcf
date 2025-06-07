@@ -1,0 +1,58 @@
+##fileformat=VCFv4.1
+##fileDate
+##source=breseq_GD2VCF_converterter
+##contig=<ID=contig_1,length=625321>
+##contig=<ID=contig_2,length=446328>
+##contig=<ID=contig_3,length=326963>
+##contig=<ID=contig_4,length=326164>
+##contig=<ID=contig_5,length=195696>
+##contig=<ID=contig_6,length=179540>
+##contig=<ID=contig_7,length=177065>
+##contig=<ID=contig_8,length=103915>
+##contig=<ID=contig_9,length=99798>
+##contig=<ID=contig_10,length=71019>
+##contig=<ID=contig_11,length=68611>
+##contig=<ID=contig_12,length=66638>
+##contig=<ID=contig_13,length=65135>
+##contig=<ID=contig_14,length=38814>
+##contig=<ID=contig_15,length=34288>
+##contig=<ID=contig_16,length=32573>
+##contig=<ID=contig_17,length=28114>
+##contig=<ID=contig_18,length=23922>
+##contig=<ID=contig_19,length=16136>
+##contig=<ID=contig_20,length=15651>
+##contig=<ID=contig_21,length=15356>
+##contig=<ID=contig_22,length=13576>
+##contig=<ID=contig_23,length=7926>
+##contig=<ID=contig_24,length=6279>
+##contig=<ID=contig_25,length=6003>
+##contig=<ID=contig_26,length=5238>
+##contig=<ID=contig_27,length=5183>
+##contig=<ID=contig_28,length=3987>
+##contig=<ID=contig_29,length=3281>
+##contig=<ID=contig_30,length=1775>
+##contig=<ID=contig_31,length=1681>
+##contig=<ID=contig_32,length=1065>
+##contig=<ID=contig_33,length=814>
+##contig=<ID=contig_34,length=610>
+##contig=<ID=contig_35,length=373>
+##contig=<ID=contig_36,length=331>
+##contig=<ID=contig_37,length=331>
+##contig=<ID=contig_38,length=326>
+##contig=<ID=contig_39,length=306>
+##INFO=<ID=AF,Number=A,Type=Float,Description="Allele Frequency">
+##INFO=<ID=AD,Number=1,Type=Float,Description="Allele Depth (avg read count)">
+##INFO=<ID=DP,Number=1,Type=Float,Description="Total Depth (avg read count)">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+contig_1	249536	.	T	TT	2980.9	PASS	AF=1.0000;AD=808;DP=827
+contig_2	246920	.	C	T	2546.2	PASS	AF=1.0000;AD=686;DP=687
+contig_2	398717	.	T	TT	2162.0	PASS	AF=1.0000;AD=583;DP=630
+contig_3	266852	.	CG	C	4113.0	PASS	AF=1.0000;AD=821;DP=821
+contig_4	41557	.	C	T	3272.1	PASS	AF=1.0000;AD=873;DP=874
+contig_5	61530	.	G	A	3073.4	PASS	AF=1.0000;AD=821;DP=821
+contig_5	119962	.	G	A	2946.3	PASS	AF=1.0000;AD=795;DP=797
+contig_5	132096	.	TT	T	3568.1	PASS	AF=1.0000;AD=713;DP=713
+contig_5	150312	.	G	A	2899.0	PASS	AF=1.0000;AD=785;DP=785
+contig_5	154421	.	C	T	2913.3	PASS	AF=1.0000;AD=783;DP=783
+contig_7	22621	.	C	T	2565.8	PASS	AF=1.0000;AD=692;DP=693

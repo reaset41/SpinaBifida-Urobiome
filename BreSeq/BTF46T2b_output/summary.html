@@ -1,0 +1,163 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html>
+<head>
+<title>BRESEQ :: Summary Statistics</title>
+<style type = "text/css">
+body {font-family: sans-serif; font-size: 11pt;}
+th {background-color: rgb(0,0,0); color: rgb(255,255,255);}
+table {background-color: rgb(1,0,0); color: rgb(0,0,0);}
+tr {background-color: rgb(255,255,255);}
+.mutation_in_codon {color:red; text-decoration : underline;}
+.snp_type_synonymous{color:green;}
+.snp_type_nonsynonymous{color:blue;}
+.snp_type_nonsense{color:red;}
+.mutation_header_row {background-color: rgb(0,130,0);}
+.read_alignment_header_row {background-color: rgb(255,0,0);}
+.missing_coverage_header_row {background-color: rgb(0,100,100);}
+.new_junction_header_row {background-color: rgb(0,0,155);}
+.copy_number_header_row {background-color: rgb(153,102,0);}
+.alternate_table_row_0 {background-color: rgb(255,255,255);}
+.alternate_table_row_1 {background-color: rgb(235,235,235);}
+.gray_table_row {background-color: rgb(230,230,245);}
+.polymorphism_table_row {background-color: rgb(160,255,160);}
+.highlight_table_row {background-color: rgb(192,255,255);}
+.reject_table_row {background-color: rgb(255,200,165);}
+.user_defined_table_row {background-color: rgb(255,255,0);}
+.information_table_row {background-color: rgb(200,255,255);}
+.junction_repeat {background-color: rgb(255,165,0)}
+.junction_gene {}
+.hidden { display: none; }
+.unhidden { display: block; }
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+  function hideTog(divID) {
+    var item = document.getElementById(divID);
+    if (item) {
+      item.className=(item.className=='hidden')?'unhidden':'hidden';
+    }
+  }
+  function showTog(butID) {
+    var button = document.getElementById(butID);
+    if (button) {
+      button.value=(button.value=='Show')?'Hide':'Show';
+    }
+  }
+</script>
+
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+<tr>
+<td><a href="http://barricklab.org/breseq"><img src="evidence/breseq_small.png" /></a></td>
+<td width="100%">
+<b><i>breseq</i></b>&nbsp;&nbsp;version 0.38.2&nbsp;&nbsp;
+<br><a href="index.html">mutation predictions</a> | 
+<a href="marginal.html">marginal predictions</a> | 
+<a href="summary.html">summary statistics</a> | 
+<a href="output.gd">genome diff</a> | 
+<a href="log.txt">command line log</a>
+</td></tr></table>
+
+<p>
+<h2>Read File Information</h2>
+<table border="0" cellspace="1" cellpadding="5">
+<tr ><th></th><th>read file</th><th>reads</th><th>bases</th><th>passed&nbsp;filters</th><th>average</th><th>longest</th><th>mapped</th></tr>
+<tr ><td><a href="calibration/BTF46T2b_R1-trimmed.error_rates.pdf">errors</a></td><td>BTF46T2b_R1-trimmed</td><td align="right">20,121,771</td><td align="right">2,999,211,875</td><td align="right">100.0%</td><td align="right">149.1&nbsp;bases</td><td align="right">151&nbsp;bases</td><td align="right">99.7%</td></tr><tr ><td><a href="calibration/BTF46T2b_R2-trimmed.error_rates.pdf">errors</a></td><td>BTF46T2b_R2-trimmed</td><td align="right">19,893,049</td><td align="right">2,964,674,853</td><td align="right">98.8%</td><td align="right">149.0&nbsp;bases</td><td align="right">151&nbsp;bases</td><td align="right">99.6%</td></tr><tr class="highlight_table_row"><td></td><td><b>total</b></td><td align="right"><b>40,014,820</b></td><td align="right"><b>5,963,886,728</b></td><td align="right">99.4%</td><td align="right">149.0&nbsp;bases</td><td align="right"><b>151</b>&nbsp;bases</td><td align="right">99.6%</td></tr></table><h2>Reference Sequence Information</h2>
+<p>
+<table border="0" cellspacing="1" cellpadding="5" >
+<tr><th></th><th></th><th>seq id</th><th>length</th><th align="center">fit mean</th><th align="center">fit relative_variance</th><th align="center">% mapped reads</th><th align="left">description</th></tr>
+<tr><td><a href="evidence/contig_1.overview.png">coverage</a></td><td><a href="calibration/0.unique_coverage.pdf">distribution</a></td><td>contig_1</td><td align="right">739,137</td><td align="center">1385.2</td><td align="center">20.7</td><td align="center">17.2%</td><td>contig_1, whole genome shotgun sequence.</td></tr><tr><td><a href="evidence/contig_2.overview.png">coverage</a></td><td><a href="calibration/1.unique_coverage.pdf">distribution</a></td><td>contig_2</td><td align="right">447,462</td><td align="center">1733.4</td><td align="center">14.3</td><td align="center">12.8%</td><td>contig_2, whole genome shotgun sequence.</td></tr><tr><td><a href="evidence/contig_3.overview.png">coverage</a></td><td><a href="calibration/2.unique_coverage.pdf">distribution</a></td><td>contig_3</td><td align="right">371,667</td><td align="center">1318.7</td><td align="center">11.1</td><td align="center">7.0%</td><td>contig_3, whole genome shotgun sequence.</td></tr><tr><td><a href="evidence/contig_4.overview.png">coverage</a></td><td><a href="calibration/3.unique_coverage.pdf">distribution</a></td><td>contig_4</td><td align="right">281,762</td><td align="center">1922.4</td><td align="center">15.8</td><td align="center">9.0%</td><td>contig_4, whole genome shotgun sequence.</td></tr><tr><td><a href="evidence/contig_5.overview.png">coverage</a></td><td><a href="calibration/4.unique_coverage.pdf">distribution</a></td><td>contig_5</td><td align="right">256,302</td><td align="center">1087.8</td><td align="center">8.9</td><td align="center">4.6%</td><td>contig_5, whole genome shotgun sequence.</td></tr><tr><td><a href="evidence/contig_6.overview.png">coverage</a></td><td><a href="calibration/5.unique_coverage.pdf">distribution</a></td><td>contig_6</td><td align="right">249,643</td><td align="center">1606.2</td><td align="center">10.5</td><td align="center">6.6%</td><td>contig_6, whole genome shotgun sequence.</td></tr><tr><td><a href="evidence/contig_7.overview.png">coverage</a></td><td><a href="calibration/6.unique_coverage.pdf">distribution</a></td><td>contig_7</td><td align="right">228,253</td><td align="center">1190.8</td><td align="center">9.3</td><td align="center">4.5%</td><td>contig_7, whole genome shotgun sequence.</td></tr><tr><td><a href="evidence/contig_8.overview.png">coverage</a></td><td><a href="calibration/7.unique_coverage.pdf">distribution</a></td><td>contig_8</td><td align="right">217,561</td><td align="center">1453.4</td><td align="center">12.0</td><td align="center">5.3%</td><td>contig_8, whole genome shotgun sequence.</td></tr><tr><td><a href="evidence/contig_9.overview.png">coverage</a></td><td><a href="calibration/8.unique_coverage.pdf">distribution</a></td><td>contig_9</td><td align="right">216,935</td><td align="center">1969.1</td><td align="center">14.5</td><td align="center">7.0%</td><td>contig_9, whole genome shotgun sequence.</td></tr><tr><td><a href="evidence/contig_10.overview.png">coverage</a></td><td><a href="calibration/9.unique_coverage.pdf">distribution</a></td><td>contig_10</td><td align="right">204,025</td><td align="center">1708.0</td><td align="center">11.6</td><td align="center">5.8%</td><td>contig_10, whole genome shotgun sequence.</td></tr><tr><td><a href="evidence/contig_11.overview.png">coverage</a></td><td><a href="calibration/10.unique_coverage.pdf">distribution</a></td><td>contig_11</td><td align="right">200,891</td><td align="center">1856.6</td><td align="center">13.0</td><td align="center">6.2%</td><td>contig_11, whole genome shotgun sequence.</td></tr><tr><td><a href="evidence/contig_12.overview.png">coverage</a></td><td><a href="calibration/11.unique_coverage.pdf">distribution</a></td><td>contig_12</td><td align="right">153,717</td><td align="center">1196.2</td><td align="center">8.6</td><td align="center">3.0%</td><td>contig_12, whole genome shotgun sequence.</td></tr><tr><td><a href="evidence/contig_13.overview.png">coverage</a></td><td><a href="calibration/12.unique_coverage.pdf">distribution</a></td><td>contig_13</td><td align="right">82,944</td><td align="center">1576.6</td><td align="center">15.4</td><td align="center">2.2%</td><td>contig_13, whole genome shotgun sequence.</td></tr><tr><td><a href="evidence/contig_14.overview.png">coverage</a></td><td><a href="calibration/13.unique_coverage.pdf">distribution</a></td><td>contig_14</td><td align="right">67,337</td><td align="center">1156.5</td><td align="center">7.3</td><td align="center">1.3%</td><td>contig_14, whole genome shotgun sequence.</td></tr><tr><td><a href="evidence/contig_15.overview.png">coverage</a></td><td><a href="calibration/14.unique_coverage.pdf">distribution</a></td><td>contig_15</td><td align="right">50,064</td><td align="center">1789.4</td><td align="center">12.2</td><td align="center">1.5%</td><td>contig_15, whole genome shotgun sequence.</td></tr><tr><td><a href="evidence/contig_16.overview.png">coverage</a></td><td><a href="calibration/15.unique_coverage.pdf">distribution</a></td><td>contig_16</td><td align="right">47,643</td><td align="center">1768.2</td><td align="center">11.1</td><td align="center">1.4%</td><td>contig_16, whole genome shotgun sequence.</td></tr><tr><td><a href="evidence/contig_17.overview.png">coverage</a></td><td><a href="calibration/16.unique_coverage.pdf">distribution</a></td><td>contig_17</td><td align="right">47,082</td><td align="center">1152.2</td><td align="center">10.1</td><td align="center">0.9%</td><td>contig_17, whole genome shotgun sequence.</td></tr><tr><td><a href="evidence/contig_18.overview.png">coverage</a></td><td><a href="calibration/17.unique_coverage.pdf">distribution</a></td><td>contig_18</td><td align="right">27,956</td><td align="center">1958.5</td><td align="center">11.9</td><td align="center">0.9%</td><td>contig_18, whole genome shotgun sequence.</td></tr><tr><td><a href="evidence/contig_19.overview.png">coverage</a></td><td><a href="calibration/18.unique_coverage.pdf">distribution</a></td><td>contig_19</td><td align="right">25,134</td><td align="center">2011.1</td><td align="center">8.7</td><td align="center">0.8%</td><td>contig_19, whole genome shotgun sequence.</td></tr><tr><td><a href="evidence/contig_20.overview.png">coverage</a></td><td><a href="calibration/19.unique_coverage.pdf">distribution</a></td><td>contig_20</td><td align="right">20,460</td><td align="center">1163.4</td><td align="center">6.7</td><td align="center">0.4%</td><td>contig_20, whole genome shotgun sequence.</td></tr><tr><td><a href="evidence/contig_21.overview.png">coverage</a></td><td><a href="calibration/20.unique_coverage.pdf">distribution</a></td><td>contig_21</td><td align="right">4,778</td><td align="center">1812.9</td><td align="center">19.3</td><td align="center">0.1%</td><td>contig_21, whole genome shotgun sequence.</td></tr><tr><td><a href="evidence/contig_22.overview.png">coverage</a></td><td><a href="calibration/21.unique_coverage.pdf">distribution</a></td><td>contig_22</td><td align="right">2,982</td><td align="center">1063.5</td><td align="center">6.5</td><td align="center">0.1%</td><td>contig_22, whole genome shotgun sequence.</td></tr><tr><td><a href="evidence/contig_23.overview.png">coverage</a></td><td><a href="calibration/22.unique_coverage.pdf">distribution</a></td><td>contig_23</td><td align="right">2,016</td><td align="center">2398.4</td><td align="center">2.8</td><td align="center">0.1%</td><td>contig_23, whole genome shotgun sequence.</td></tr><tr><td><a href="evidence/contig_24.overview.png">coverage</a></td><td><a href="calibration/23.unique_coverage.pdf">distribution</a></td><td>contig_24</td><td align="right">1,776</td><td align="center">13813.3</td><td align="center">40.7</td><td align="center">0.4%</td><td>contig_24, whole genome shotgun sequence.</td></tr><tr><td><a href="evidence/contig_25.overview.png">coverage</a></td><td><a href="calibration/24.unique_coverage.pdf">distribution</a></td><td>contig_25</td><td align="right">1,764</td><td align="center">13502.7</td><td align="center">60.5</td><td align="center">0.4%</td><td>contig_25, whole genome shotgun sequence.</td></tr><tr><td><a href="evidence/contig_26.overview.png">coverage</a></td><td><a href="calibration/25.unique_coverage.pdf">distribution</a></td><td>contig_26</td><td align="right">1,759</td><td align="center">903.3</td><td align="center">21.0</td><td align="center">0.0%</td><td>contig_26, whole genome shotgun sequence.</td></tr><tr><td><a href="evidence/contig_27.overview.png">coverage</a></td><td><a href="calibration/26.unique_coverage.pdf">distribution</a></td><td>contig_27</td><td align="right">1,645</td><td align="center">1192.9</td><td align="center">6.2</td><td align="center">0.0%</td><td>contig_27, whole genome shotgun sequence.</td></tr><tr><td><a href="evidence/contig_28.overview.png">coverage</a></td><td><a href="calibration/27.unique_coverage.pdf">distribution</a></td><td>contig_28</td><td align="right">1,430</td><td align="center">1114.6</td><td align="center">2.4</td><td align="center">0.0%</td><td>contig_28, whole genome shotgun sequence.</td></tr><tr><td><a href="evidence/contig_29.overview.png">coverage</a></td><td><a href="calibration/28.unique_coverage.pdf">distribution</a></td><td>contig_29</td><td align="right">1,118</td><td align="center">4245.0</td><td align="center">8.2</td><td align="center">0.1%</td><td>contig_29, whole genome shotgun sequence.</td></tr><tr><td><a href="evidence/contig_30.overview.png">coverage</a></td><td><a href="calibration/29.unique_coverage.pdf">distribution</a></td><td>contig_30</td><td align="right">1,109</td><td align="center">11451.7</td><td align="center">33.7</td><td align="center">0.2%</td><td>contig_30, whole genome shotgun sequence.</td></tr><tr><td><a href="evidence/contig_31.overview.png">coverage</a></td><td><a href="calibration/30.unique_coverage.pdf">distribution</a></td><td>contig_31</td><td align="right">625</td><td align="center">2048.4</td><td align="center">1.0</td><td align="center">0.0%</td><td>contig_31, whole genome shotgun sequence.</td></tr><tr><td><a href="evidence/contig_32.overview.png">coverage</a></td><td><a href="calibration/31.unique_coverage.pdf">distribution</a></td><td>contig_32</td><td align="right">605</td><td align="center">1180.2</td><td align="center">18.7</td><td align="center">0.0%</td><td>contig_32, whole genome shotgun sequence.</td></tr><tr><td><a href="evidence/contig_33.overview.png">coverage</a></td><td><a href="calibration/32.unique_coverage.pdf">distribution</a></td><td>contig_33</td><td align="right">559</td><td align="center">13871.0</td><td align="center">1.0</td><td align="center">0.1%</td><td>contig_33, whole genome shotgun sequence.</td></tr><tr><td><a href="evidence/contig_34.overview.png">coverage</a></td><td><a href="calibration/33.unique_coverage.pdf">distribution</a></td><td>contig_34</td><td align="right">557</td><td align="center">13483.5</td><td align="center">4.0</td><td align="center">0.1%</td><td>contig_34, whole genome shotgun sequence.</td></tr><tr><td><a href="evidence/contig_35.overview.png">coverage</a></td><td><a href="calibration/34.unique_coverage.pdf">distribution</a></td><td>contig_35</td><td align="right">454</td><td align="center">1515.9</td><td align="center">1.0</td><td align="center">0.0%</td><td>contig_35, whole genome shotgun sequence.</td></tr><tr class="reject_table_row"><td><a href="evidence/contig_36.overview.png">coverage</a></td><td><a href="calibration/35.unique_coverage.pdf">distribution</a></td><td>contig_36</td><td align="right">449</td><td align="center">[1710.3]</td><td align="center">[172.1]</td><td align="center">0.0%</td><td>contig_36, whole genome shotgun sequence.</td></tr><tr><td><a href="evidence/contig_37.overview.png">coverage</a></td><td><a href="calibration/36.unique_coverage.pdf">distribution</a></td><td>contig_37</td><td align="right">423</td><td align="center">4482.8</td><td align="center">1.0</td><td align="center">0.0%</td><td>contig_37, whole genome shotgun sequence.</td></tr><tr class="reject_table_row"><td><a href="evidence/contig_38.overview.png">coverage</a></td><td><a href="calibration/37.unique_coverage.pdf">distribution</a></td><td>contig_38</td><td align="right">368</td><td align="center">[1897.0]</td><td align="center">[302.4]</td><td align="center">0.0%</td><td>contig_38, whole genome shotgun sequence.</td></tr><tr class="highlight_table_row"><td></td><td></td><td><b>total</b></td><td align="right"><b>3,960,392</b></td><td></td><td></td><td align="center">100.0%</td><td></td></tr>
+</table>
+<p><b>fit relative_variance</b> is the ratio of the variance to the mean for the negative binomial fit. It is =1 for Poisson and >1 for over-dispersed data.
+<p><span class="reject_table_row">Fit failed</span> Negative binomial fit failed for this reference sequence. It may have an unusual coverage depth distribution. JC and MC predictions may be less accurate.
+<h2>New Junction Evidence</h2>
+<p>
+<h3>Junction Candidates Tested</h3>
+<p>
+<table border="0" cellspacing="1" cellpadding="5">
+<tr><th align="center">option</th><th align="center">limit</th><th align="center">actual</th></tr><tr><td>Number of alignment pairs examined for constructing junction candidates</td><td align="center">&le;&nbsp;100000</td><td align="center">94889</td></tr><tr><td>Coverage evenness (position-hash) score of junction candidates</td><td align="center">&ge;&nbsp;2</td><td align="center">&ge;&nbsp;2</td></tr><tr><td>Test this many junction candidates (n). May be smaller if not enough passed the coverage evenness threshold</td><td align="center">100&nbsp;&le;&nbsp;n&nbsp;&le;&nbsp;5000</td><td align="center">603</td></tr><tr><td>Total length of all junction candidates (factor times the reference genome length)</td><td align="center">&le;&nbsp;0.1</td><td align="center">0.047</td></tr></table>
+<h3>Junction Skew Score Calculation</h3>
+<p>
+<table border="0" cellspacing="1" cellpadding="5">
+<tr ><th>reference sequence</th><th>pr(no read start)</th></tr>
+<tr >
+<td>contig_1</td><td align="center">0.07466</td></tr><tr >
+<td>contig_2</td><td align="center">0.04663</td></tr><tr >
+<td>contig_3</td><td align="center">0.21848</td></tr><tr >
+<td>contig_4</td><td align="center">0.03633</td></tr><tr >
+<td>contig_5</td><td align="center">0.11745</td></tr><tr >
+<td>contig_6</td><td align="center">0.05567</td></tr><tr >
+<td>contig_7</td><td align="center">0.10093</td></tr><tr >
+<td>contig_8</td><td align="center">0.06739</td></tr><tr >
+<td>contig_9</td><td align="center">0.03591</td></tr><tr >
+<td>contig_10</td><td align="center">0.04866</td></tr><tr >
+<td>contig_11</td><td align="center">0.03946</td></tr><tr >
+<td>contig_12</td><td align="center">0.10020</td></tr><tr >
+<td>contig_13</td><td align="center">0.05851</td></tr><tr >
+<td>contig_14</td><td align="center">0.10532</td></tr><tr >
+<td>contig_15</td><td align="center">0.04801</td></tr><tr >
+<td>contig_16</td><td align="center">0.04552</td></tr><tr >
+<td>contig_17</td><td align="center">0.10805</td></tr><tr >
+<td>contig_18</td><td align="center">0.03700</td></tr><tr >
+<td>contig_19</td><td align="center">0.03670</td></tr><tr >
+<td>contig_20</td><td align="center">0.09494</td></tr><tr >
+<td>contig_21</td><td align="center">0.06634</td></tr><tr >
+<td>contig_22</td><td align="center">0.14885</td></tr><tr >
+<td>contig_23</td><td align="center">0.08761</td></tr><tr >
+<td>contig_24</td><td align="center">0.05771</td></tr><tr >
+<td>contig_25</td><td align="center">0.05471</td></tr><tr >
+<td>contig_26</td><td align="center">0.12361</td></tr><tr >
+<td>contig_27</td><td align="center">0.16974</td></tr><tr >
+<td>contig_28</td><td align="center">0.16277</td></tr><tr >
+<td>contig_29</td><td align="center">0.10778</td></tr><tr >
+<td>contig_30</td><td align="center">0.09197</td></tr><tr >
+<td>contig_31</td><td align="center">0.26371</td></tr><tr >
+<td>contig_32</td><td align="center">0.29339</td></tr><tr >
+<td>contig_33</td><td align="center">0.17442</td></tr><tr >
+<td>contig_34</td><td align="center">0.17774</td></tr><tr >
+<td>contig_35</td><td align="center">0.02593</td></tr><tr >
+<td>contig_36</td><td align="center">NA</td></tr><tr >
+<td>contig_37</td><td align="center">0.32722</td></tr><tr >
+<td>contig_38</td><td align="center">NA</td></tr></table><p><b>pr(no read start)</b> is the probability that there will not be an aligned read whose first base matches a given position on a given strand.
+<h3>Final Junction Predictions</h3>
+<p>
+<table border="0" cellspacing="1" cellpadding="5">
+<tr><th align="center">option</th><th align="center">value</th></tr><tr><td>Coverage evenness (position-hash) score of predicted junctions must be</td><td align="center">&ge;&nbsp;3</td></tr><tr><td>Minimum probablilty assigned that no mapped read will start at a given position and strand for junction prediction</td><td align="center">0.1</td></tr><tr><td>Junction allow suboptimal matches</td><td align="center">FALSE</td></tr><tr><td>Skew score of predicted junction (&minus;log10 probability of unusual coverage evenness) must be</td><td align="center">&le;&nbsp;3</td></tr><tr><td>Number of bases that at least one read must overlap each uniquely aligned side of a predicted junction</td><td align="center">&ge;&nbsp;1</td></tr></table>
+<h2>Read Alignment Evidence</h2>
+<p>
+<table border="0" cellspacing="1" cellpadding="5">
+<tr><th>option</th><th>value</th></tr><tr><td>Mode</td><td>Consensus/Mixed Base</td></tr><tr><td>Ploidy</td><td>1 (haploid)</td></tr><tr><td>Consensus mutation E-value cutoff</td><td>10</td></tr><tr><td>Consensus frequency cutoff</td><td>0.8</td></tr><tr><td>Consensus minimum variant coverage each strand</td><td>OFF</td></tr><tr><td>Consensus minimum total coverage each strand</td><td>OFF</td></tr><tr><td>Consensus minimum variant coverage</td><td>OFF</td></tr><tr><td>Consensus minimum total coverage</td><td>OFF</td></tr><tr><td>Polymorphism E-value cutoff</td><td>10</td></tr><tr><td>Polymorphism frequency cutoff</td><td>0.2</td></tr><tr><td>Polymorphism minimum variant coverage each strand</td><td>OFF</td></tr><tr><td>Polymorphism minimum total coverage each strand</td><td>OFF</td></tr><tr><td>Polymorphism minimum variant coverage</td><td>OFF</td></tr><tr><td>Polymorphism minimum total coverage</td><td>OFF</td></tr><tr><td>Polymorphism bias cutoff</td><td>OFF</td></tr><tr><td>Predict indel polymorphisms</td><td>YES</td></tr><tr><td>Skip indel polymorphisms in homopolymers runs of</td><td>OFF</td></tr><tr><td>Skip base substitutions when they create a homopolymer flanked on each side by</td><td>OFF</td></tr></table><p>
+<h2>Software Versions</h2>
+<table border="0" cellspacing="1" cellpadding="5">
+<tr><th>program</th><th>version</th></tr>
+<tr><td>bowtie2</td><td>2.4.5</td></tr>
+<tr><td>R</td><td>4.4.0</td></tr>
+</table><p>
+<h2>Execution Times</h2>
+<table border="0" cellspacing="1" cellpadding="5">
+<tr><th>step</th><th>start</th><th>end</th><th>elapsed</th></tr>
+<tr><td>Read and reference sequence file input</td><td>06:55:03&nbsp;24&nbsp;Apr&nbsp;2025</td><td>07:04:41&nbsp;24&nbsp;Apr&nbsp;2025</td><td>9&nbsp;minutes&nbsp;38&nbsp;seconds</td></tr>
+<tr><td>Read alignment to reference genome</td><td>08:05:27&nbsp;24&nbsp;Apr&nbsp;2025</td><td>09:00:13&nbsp;24&nbsp;Apr&nbsp;2025</td><td>54&nbsp;minutes&nbsp;46&nbsp;seconds</td></tr>
+<tr><td>Preprocessing alignments for candidate junction identification</td><td>09:00:13&nbsp;24&nbsp;Apr&nbsp;2025</td><td>09:06:18&nbsp;24&nbsp;Apr&nbsp;2025</td><td>6&nbsp;minutes&nbsp;5&nbsp;seconds</td></tr>
+<tr><td>Preliminary analysis of coverage distribution</td><td>09:13:24&nbsp;24&nbsp;Apr&nbsp;2025</td><td>09:24:03&nbsp;24&nbsp;Apr&nbsp;2025</td><td>10&nbsp;minutes&nbsp;39&nbsp;seconds</td></tr>
+<tr><td>Identifying junction candidates</td><td>09:24:03&nbsp;24&nbsp;Apr&nbsp;2025</td><td>09:24:43&nbsp;24&nbsp;Apr&nbsp;2025</td><td>40&nbsp;seconds</td></tr>
+<tr><td>Re-alignment to junction candidates</td><td>09:48:47&nbsp;24&nbsp;Apr&nbsp;2025</td><td>10:03:34&nbsp;24&nbsp;Apr&nbsp;2025</td><td>14&nbsp;minutes&nbsp;47&nbsp;seconds</td></tr>
+<tr><td>Resolving best read alignments</td><td>10:03:34&nbsp;24&nbsp;Apr&nbsp;2025</td><td>10:14:05&nbsp;24&nbsp;Apr&nbsp;2025</td><td>10&nbsp;minutes&nbsp;31&nbsp;seconds</td></tr>
+<tr><td>Creating BAM files</td><td>10:14:05&nbsp;24&nbsp;Apr&nbsp;2025</td><td>10:22:11&nbsp;24&nbsp;Apr&nbsp;2025</td><td>8&nbsp;minutes&nbsp;6&nbsp;seconds</td></tr>
+<tr><td>Tabulating error counts</td><td>10:22:11&nbsp;24&nbsp;Apr&nbsp;2025</td><td>10:29:49&nbsp;24&nbsp;Apr&nbsp;2025</td><td>7&nbsp;minutes&nbsp;38&nbsp;seconds</td></tr>
+<tr><td>Re-calibrating base error rates</td><td>10:29:49&nbsp;24&nbsp;Apr&nbsp;2025</td><td>10:30:10&nbsp;24&nbsp;Apr&nbsp;2025</td><td>21&nbsp;seconds</td></tr>
+<tr><td>Examining read alignment evidence</td><td>10:30:10&nbsp;24&nbsp;Apr&nbsp;2025</td><td>11:15:50&nbsp;24&nbsp;Apr&nbsp;2025</td><td>45&nbsp;minutes&nbsp;40&nbsp;seconds</td></tr>
+<tr><td>Polymorphism statistics</td><td>11:15:50&nbsp;24&nbsp;Apr&nbsp;2025</td><td>11:15:53&nbsp;24&nbsp;Apr&nbsp;2025</td><td>3&nbsp;seconds</td></tr>
+<tr><td>Output</td><td>11:15:53&nbsp;24&nbsp;Apr&nbsp;2025</td><td>11:16:25&nbsp;24&nbsp;Apr&nbsp;2025</td><td>32&nbsp;seconds</td></tr>
+<tr><td>Output :: Mutation Prediction</td><td>11:15:53&nbsp;24&nbsp;Apr&nbsp;2025</td><td>11:15:58&nbsp;24&nbsp;Apr&nbsp;2025</td><td>5&nbsp;seconds</td></tr>
+<tr><td>Output :: Mutation Annotation</td><td>11:15:58&nbsp;24&nbsp;Apr&nbsp;2025</td><td>11:15:58&nbsp;24&nbsp;Apr&nbsp;2025</td><td>0&nbsp;seconds</td></tr>
+<tr class="highlight_table_row">
+<td colspan="3" ><b>Total</b></td>
+<td><b>2&nbsp;hours&nbsp;49&nbsp;minutes&nbsp;31&nbsp;seconds</b></td>
+</tr>
+</table></body></html>
