@@ -1,0 +1,395 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html>
+<head>
+<title>BRESEQ :: Marginal Predictions</title>
+<style type = "text/css">
+body {font-family: sans-serif; font-size: 11pt;}
+th {background-color: rgb(0,0,0); color: rgb(255,255,255);}
+table {background-color: rgb(1,0,0); color: rgb(0,0,0);}
+tr {background-color: rgb(255,255,255);}
+.mutation_in_codon {color:red; text-decoration : underline;}
+.snp_type_synonymous{color:green;}
+.snp_type_nonsynonymous{color:blue;}
+.snp_type_nonsense{color:red;}
+.mutation_header_row {background-color: rgb(0,130,0);}
+.read_alignment_header_row {background-color: rgb(255,0,0);}
+.missing_coverage_header_row {background-color: rgb(0,100,100);}
+.new_junction_header_row {background-color: rgb(0,0,155);}
+.copy_number_header_row {background-color: rgb(153,102,0);}
+.alternate_table_row_0 {background-color: rgb(255,255,255);}
+.alternate_table_row_1 {background-color: rgb(235,235,235);}
+.gray_table_row {background-color: rgb(230,230,245);}
+.polymorphism_table_row {background-color: rgb(160,255,160);}
+.highlight_table_row {background-color: rgb(192,255,255);}
+.reject_table_row {background-color: rgb(255,200,165);}
+.user_defined_table_row {background-color: rgb(255,255,0);}
+.information_table_row {background-color: rgb(200,255,255);}
+.junction_repeat {background-color: rgb(255,165,0)}
+.junction_gene {}
+.hidden { display: none; }
+.unhidden { display: block; }
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+  function hideTog(divID) {
+    var item = document.getElementById(divID);
+    if (item) {
+      item.className=(item.className=='hidden')?'unhidden':'hidden';
+    }
+  }
+  function showTog(butID) {
+    var button = document.getElementById(butID);
+    if (button) {
+      button.value=(button.value=='Show')?'Hide':'Show';
+    }
+  }
+</script>
+
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+<tr>
+<td><a href="http://barricklab.org/breseq"><img src="evidence/breseq_small.png" /></a></td>
+<td width="100%">
+<b><i>breseq</i></b>&nbsp;&nbsp;version 0.35.0&nbsp;&nbsp;
+<br><a href="index.html">mutation predictions</a> | 
+<a href="marginal.html">marginal predictions</a> | 
+<a href="summary.html">summary statistics</a> | 
+<a href="output.gd">genome diff</a> | 
+<a href="log.txt">command line log</a>
+</td></tr></table>
+
+<p>
+<p>
+<table border="0" cellspacing="1", cellpadding="3">
+<tr><th colspan="12" align="left" class="read_alignment_header_row">Marginal read alignment evidence (highest frequency 20 of 503 shown, sorted by frequency from high to low)</th></tr>
+<tr>
+<th>&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th colspan="2">position</th>
+<th>ref</th>
+<th>new</th>
+<th>freq</th>
+<th>score&nbsp;(cons/poly)</th>
+<th>reads</th>
+<th>annotation</th>
+<th>genes</th>
+<th width="100%">product</th>
+</tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_465.html">*</a></td><td align="center">contig_53</td><td align="right">136</td><td align="right">0</td><td align="center">A</td><td align="center">G</td><td align="right">79.4%
+</td><td align="center">4737.7
+/&nbsp;inf
+</td><td align="center">3745</td><td align="center">intergenic&nbsp;(&#8211;/+253)</td><td align="center"><i>&#8211;/clpB</i></td><td align="left">&#8211;/ATP&#8209;dependent chaperone ClpB</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_388.html">*</a></td><td align="center">contig_29</td><td align="right">11,694</td><td align="right">0</td><td align="center">T</td><td align="center">C</td><td align="right">78.3%
+</td><td align="center">11563.0
+/&nbsp;inf
+</td><td align="center">6222</td><td align="center"><font class="snp_type_nonsynonymous">C210R</font>&nbsp;(<font class="mutation_in_codon">T</font>GC&rarr;<font class="mutation_in_codon">C</font>GC)&nbsp;</td><td align="center"><i>JDPFID_04633</i></td><td align="left">IS66 family transposase</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_484.html">*</a></td><td align="center">contig_59</td><td align="right">3,023</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">77.8%
+</td><td align="center">11242.7
+/&nbsp;inf
+</td><td align="center">5591</td><td align="center"><font class="snp_type_nonsynonymous">R351W</font>&nbsp;(<font class="mutation_in_codon">C</font>GG&rarr;<font class="mutation_in_codon">T</font>GG)&nbsp;</td><td align="center"><i>ltrA</i></td><td align="left">group II intron reverse transcriptase/maturase</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_485.html">*</a></td><td align="center">contig_59</td><td align="right">3,987</td><td align="right">0</td><td align="center">A</td><td align="center">C</td><td align="right">77.2%
+</td><td align="center">13040.9
+/&nbsp;inf
+</td><td align="center">5561</td><td align="center"><font class="snp_type_synonymous">A29A</font>&nbsp;(GC<font class="mutation_in_codon">T</font>&rarr;GC<font class="mutation_in_codon">G</font>)&nbsp;</td><td align="center"><i>ltrA</i></td><td align="left">group II intron reverse transcriptase/maturase</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_154.html">*</a></td><td align="center">contig_160</td><td align="right">207</td><td align="right">0</td><td align="center">C</td><td align="center">A</td><td align="right">76.7%
+</td><td align="center">10581.1
+/&nbsp;inf
+</td><td align="center">5580</td><td align="center">intergenic&nbsp;(&#8211;/&#8211;)</td><td align="center"><i>&#8211;/&#8211;</i></td><td align="left">&#8211;/&#8211;</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_307.html">*</a></td><td align="center">contig_205</td><td align="right">253</td><td align="right">0</td><td align="center">T</td><td align="center">A</td><td align="right">76.6%
+</td><td align="center">8063.7
+/&nbsp;inf
+</td><td align="center">3621</td><td align="center">intergenic&nbsp;(&#8211;/&#8211;)</td><td align="center"><i>&#8211;/&#8211;</i></td><td align="left">&#8211;/&#8211;</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_497.html">*</a></td><td align="center">contig_65</td><td align="right">1,730</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">76.3%
+</td><td align="center">6356.5
+/&nbsp;inf
+</td><td align="center">3307</td><td align="center">intergenic&nbsp;(+488/+249)</td><td align="center"><i>traH/AS&#8209;traG</i></td><td align="left">conjugal transfer pilus assembly protein TraH/Antisense to traG</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_135.html">*</a></td><td align="center">contig_143</td><td align="right">193</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">76.3%
+</td><td align="center">9476.8
+/&nbsp;inf
+</td><td align="center">4967</td><td align="center"><font class="snp_type_synonymous">Q5Q</font>&nbsp;(CA<font class="mutation_in_codon">G</font>&rarr;CA<font class="mutation_in_codon">A</font>)&nbsp;</td><td align="center"><i>JDPFID_05069</i></td><td align="left">IS66 family transposase</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_157.html">*</a></td><td align="center">contig_160</td><td align="right">391</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">76.3%
+</td><td align="center">10634.9
+/&nbsp;inf
+</td><td align="center">5530</td><td align="center">intergenic&nbsp;(&#8211;/&#8211;)</td><td align="center"><i>&#8211;/&#8211;</i></td><td align="left">&#8211;/&#8211;</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_156.html">*</a></td><td align="center">contig_160</td><td align="right">387</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">76.1%
+</td><td align="center">10755.8
+/&nbsp;inf
+</td><td align="center">5631</td><td align="center">intergenic&nbsp;(&#8211;/&#8211;)</td><td align="center"><i>&#8211;/&#8211;</i></td><td align="left">&#8211;/&#8211;</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_209.html">*</a></td><td align="center">contig_17</td><td align="right">9,651</td><td align="right">0</td><td align="center">A</td><td align="center">G</td><td align="right">76.1%
+</td><td align="center">2186.4
+/&nbsp;inf
+</td><td align="center">5492</td><td align="center"><font class="snp_type_synonymous">N59N</font>&nbsp;(AA<font class="mutation_in_codon">T</font>&rarr;AA<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>insB</i></td><td align="left">Transposase and inactivated derivatives, IS1 family</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_306.html">*</a></td><td align="center">contig_205</td><td align="right">124</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">76.0%
+</td><td align="center">10162.3
+/&nbsp;inf
+</td><td align="center">5423</td><td align="center">intergenic&nbsp;(&#8211;/&#8211;)</td><td align="center"><i>&#8211;/&#8211;</i></td><td align="left">&#8211;/&#8211;</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_503.html">*</a></td><td align="center">contig_65</td><td align="right">1,974</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">75.8%
+</td><td align="center">5663.4
+/&nbsp;inf
+</td><td align="center">3087</td><td align="center">intergenic&nbsp;(+732/+5)</td><td align="center"><i>traH/AS&#8209;traG</i></td><td align="left">conjugal transfer pilus assembly protein TraH/Antisense to traG</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_155.html">*</a></td><td align="center">contig_160</td><td align="right">241</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">75.8%
+</td><td align="center">10624.3
+/&nbsp;inf
+</td><td align="center">5686</td><td align="center">intergenic&nbsp;(&#8211;/&#8211;)</td><td align="center"><i>&#8211;/&#8211;</i></td><td align="left">&#8211;/&#8211;</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_210.html">*</a></td><td align="center">contig_17</td><td align="right">9,657</td><td align="right">0</td><td align="center">T</td><td align="center">C</td><td align="right">74.2%
+</td><td align="center">1515.1
+/&nbsp;inf
+</td><td align="center">5480</td><td align="center"><font class="snp_type_synonymous">R57R</font>&nbsp;(CG<font class="mutation_in_codon">A</font>&rarr;CG<font class="mutation_in_codon">G</font>)&nbsp;</td><td align="center"><i>insB</i></td><td align="left">Transposase and inactivated derivatives, IS1 family</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_483.html">*</a></td><td align="center">contig_59</td><td align="right">2,785</td><td align="right">0</td><td align="center">G</td><td align="center">C</td><td align="right">74.2%
+</td><td align="center">9000.5
+/&nbsp;inf
+</td><td align="center">4891</td><td align="center">intergenic&nbsp;(&#8209;10/+107)</td><td align="center"><i>JDPFID_04939/ltrA</i></td><td align="left">DDE&#8209;type integrase/transposase/recombinase/group II intron reverse transcriptase/maturase</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_482.html">*</a></td><td align="center">contig_59</td><td align="right">2,784</td><td align="right">0</td><td align="center">A</td><td align="center">C</td><td align="right">74.2%
+</td><td align="center">8689.7
+/&nbsp;inf
+</td><td align="center">4874</td><td align="center">intergenic&nbsp;(&#8209;9/+108)</td><td align="center"><i>JDPFID_04939/ltrA</i></td><td align="left">DDE&#8209;type integrase/transposase/recombinase/group II intron reverse transcriptase/maturase</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_352.html">*</a></td><td align="center">contig_25</td><td align="right">1,370</td><td align="right">0</td><td align="center">C</td><td align="center">A</td><td align="right">74.2%
+</td><td align="center">4362.5
+/&nbsp;inf
+</td><td align="center">3258</td><td align="center"><font class="snp_type_synonymous">T76T</font>&nbsp;(AC<font class="mutation_in_codon">C</font>&rarr;AC<font class="mutation_in_codon">A</font>)&nbsp;</td><td align="center"><i>JDPFID_04508</i></td><td align="left">Inovirus Gp2 family protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_211.html">*</a></td><td align="center">contig_17</td><td align="right">9,666</td><td align="right">0</td><td align="center">G</td><td align="center">T</td><td align="right">74.1%
+</td><td align="center">992.9
+/&nbsp;inf
+</td><td align="center">5329</td><td align="center"><font class="snp_type_synonymous">R54R</font>&nbsp;(CG<font class="mutation_in_codon">C</font>&rarr;CG<font class="mutation_in_codon">A</font>)&nbsp;</td><td align="center"><i>insB</i></td><td align="left">Transposase and inactivated derivatives, IS1 family</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_353.html">*</a></td><td align="center">contig_25</td><td align="right">1,373</td><td align="right">0</td><td align="center">T</td><td align="center">C</td><td align="right">74.1%
+</td><td align="center">4549.9
+/&nbsp;inf
+</td><td align="center">3275</td><td align="center"><font class="snp_type_synonymous">T77T</font>&nbsp;(AC<font class="mutation_in_codon">T</font>&rarr;AC<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>JDPFID_04508</i></td><td align="left">Inovirus Gp2 family protein</td></tr>
+</table>
+
+<p>
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="12" align="left" class="new_junction_header_row">Marginal new junction evidence (lowest skew 10 of 189 shown)</th></tr>
+<!-- Header Lines for New Junction -->
+<tr>
+<th colspan="2">&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th>position</th>
+<th>reads&nbsp;(cov)</th>
+<th>reads&nbsp;(cov)</th>
+<th>score</th>
+<th>skew</th>
+<th>freq</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">product</th>
+</tr>
+
+<!-- Item Lines for New Junction -->
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_860.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_860.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_18</td>
+<td align="center" class="junction_gene">1&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">873 (0.920)<br>+31 bp</td>
+<td rowspan="2" align="center">183/236</td>
+<td rowspan="2" align="center">3.0</td>
+<td rowspan="2" align="center">73.2%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/+17)</td>
+<td align="center" class="junction_gene"><i>&#8211;/hemG</i></td>
+<td class="junction_gene">&#8211;/menaquinone&#8209;dependent protoporphyrinogen IX dehydrogenase</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_860.html">?</a></td><td rowspan="1" class="junction_gene">contig_53</td>
+<td align="center" class="junction_gene">=&nbsp;276</td>
+<td align="center" class="junction_gene">808 (0.740)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/+113)</td>
+<td align="center" class="junction_gene"><i>&#8211;/clpB</i></td>
+<td class="junction_gene">&#8211;/ATP&#8209;dependent chaperone ClpB</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_838.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_838.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_17</td>
+<td align="center" class="junction_gene">9519&nbsp;=</td><td align="center" class="junction_gene">1335 (1.090)</td><td rowspan="2" align="center">1225 (1.020)</td>
+<td rowspan="2" align="center">238/298</td>
+<td rowspan="2" align="center">3.2</td>
+<td rowspan="2" align="center">64.7%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+157/+15)</td>
+<td align="center" class="junction_gene"><i>rpiR/insB</i></td>
+<td class="junction_gene">DNA&#8209;binding transcriptional regulator, MurR/RpiR family, contains HTH and SIS domains/Transposase and inactivated derivatives, IS1 family</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_838.html">?</a></td><td rowspan="1" class="junction_gene">contig_30</td>
+<td align="center" class="junction_gene">=&nbsp;19914</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(+159/&#8211;)</td>
+<td align="center" class="junction_gene"><i>uxuR/&#8211;</i></td>
+<td class="junction_gene">Uxu operon transcriptional regulator/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_865.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_865.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_181</td>
+<td align="center" class="junction_gene">1&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">660 (0.250)</td>
+<td rowspan="2" align="center">224/298</td>
+<td rowspan="2" align="center">3.3</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8211;)</td>
+<td align="center" class="junction_gene"><i>&#8211;/&#8211;</i></td>
+<td class="junction_gene">&#8211;/&#8211;</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_865.html">?</a></td><td rowspan="1" class="junction_gene">contig_96</td>
+<td align="center" class="junction_gene">1&nbsp;=</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/+445)</td>
+<td align="center" class="junction_gene"><i>&#8211;/traT</i></td>
+<td class="junction_gene">&#8211;/conjugal transfer complement resistance protein TraT</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_984.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_984.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_67</td>
+<td align="center" class="junction_gene">=&nbsp;1050</td><td align="center" class="junction_gene">1601 (0.650)</td><td rowspan="2" align="center">1141 (0.470)<br>+CTT</td>
+<td rowspan="2" align="center">227/290</td>
+<td rowspan="2" align="center">3.8</td>
+<td rowspan="2" align="center">41.9%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8209;1000)</td>
+<td align="center" class="junction_gene"><i>&#8211;/alpA</i></td>
+<td class="junction_gene">&#8211;/AlpA family phage regulatory protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_984.html">?</a></td><td rowspan="1" class="junction_gene">contig_67</td>
+<td align="center" class="junction_gene">1051&nbsp;=</td>
+<td align="center" class="junction_gene">1616 (0.650)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8209;999)</td>
+<td align="center" class="junction_gene"><i>&#8211;/alpA</i></td>
+<td class="junction_gene">&#8211;/AlpA family phage regulatory protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_871.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_871.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_19</td>
+<td align="center" class="junction_gene">=&nbsp;74961</td><td align="center" class="junction_gene">16 (0.020)</td><td rowspan="2" align="center">619 (0.780)</td>
+<td rowspan="2" align="center">206/298</td>
+<td rowspan="2" align="center">3.8</td>
+<td rowspan="2" align="center">98.7%</td>
+<td align="center" class="junction_gene">coding&nbsp;(25/5202&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>JDPFID_04283</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_871.html">?</a></td><td rowspan="1" class="junction_gene">contig_26</td>
+<td align="center" class="junction_gene">1&nbsp;=</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/+1208)</td>
+<td align="center" class="junction_gene"><i>&#8211;/paaY</i></td>
+<td class="junction_gene">&#8211;/Phenylacetic acid degradation protein PaaY</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_653.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_653.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_11</td>
+<td align="center" class="junction_gene">2&nbsp;=</td><td align="center" class="junction_gene">10 (0.010)</td><td rowspan="2" align="center">3 (0.000)<br>+A</td>
+<td rowspan="2" align="center">3/296</td>
+<td rowspan="2" align="center">4.0</td>
+<td rowspan="2" align="center">37.7%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/+325)</td>
+<td align="center" class="junction_gene"><i>&#8211;/JDPFID_03049</i></td>
+<td class="junction_gene">&#8211;/Regulatory phage protein cox</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_653.html">?</a></td><td rowspan="1" class="junction_gene">contig_121</td>
+<td align="center" class="junction_gene">1&nbsp;=</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8209;44)</td>
+<td align="center" class="junction_gene"><i>&#8211;/JDPFID_05053</i></td>
+<td class="junction_gene">&#8211;/Bacteriophage protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_917.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_917.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_23</td>
+<td align="center" class="junction_gene">2144&nbsp;=</td><td align="center" class="junction_gene">1264 (1.010)</td><td rowspan="2" align="center">885 (0.620)<br>+36 bp</td>
+<td rowspan="2" align="center">172/226</td>
+<td rowspan="2" align="center">4.1</td>
+<td rowspan="2" align="center">64.9%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+13/&#8209;142)</td>
+<td align="center" class="junction_gene"><i>JDPFID_04447/JDPFID_04448</i></td>
+<td class="junction_gene">DUF905 domain&#8209;containing protein/DUF945 domain&#8209;containing protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_917.html">?</a></td><td rowspan="1" class="junction_gene">contig_61</td>
+<td align="center" class="junction_gene">=&nbsp;3584</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(+233/&#8211;)</td>
+<td align="center" class="junction_gene"><i>JDPFID_04946/&#8211;</i></td>
+<td class="junction_gene">Aec69/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_903.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_903.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_206</td>
+<td align="center" class="junction_gene">=&nbsp;333</td><td align="center" class="junction_gene">6 (0.010)</td><td rowspan="2" align="center">813 (0.750)<br>+CG</td>
+<td rowspan="2" align="center">219/294</td>
+<td rowspan="2" align="center">4.4</td>
+<td rowspan="2" align="center">62.4%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8211;)</td>
+<td align="center" class="junction_gene"><i>&#8211;/&#8211;</i></td>
+<td class="junction_gene">&#8211;/&#8211;</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_903.html">?</a></td><td rowspan="1" class="junction_gene">contig_77</td>
+<td align="center" class="junction_gene">321&nbsp;=</td>
+<td align="center" class="junction_gene">988 (0.790)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/+657)</td>
+<td align="center" class="junction_gene"><i>&#8211;/JDPFID_04990</i></td>
+<td class="junction_gene">&#8211;/Inositol monophosphatase</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_742.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_742.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_141</td>
+<td align="center" class="junction_gene">1&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">1060 (0.850)<br>+GCTG</td>
+<td rowspan="2" align="center">182/290</td>
+<td rowspan="2" align="center">4.4</td>
+<td rowspan="2" align="center">61.2%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8209;284)</td>
+<td align="center" class="junction_gene"><i>&#8211;/JDPFID_05067</i></td>
+<td class="junction_gene">&#8211;/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_742.html">?</a></td><td rowspan="1" class="junction_gene">contig_23</td>
+<td align="center" class="junction_gene">826&nbsp;=</td>
+<td align="center" class="junction_gene">1383 (1.110)</td><td align="center" class="junction_gene">coding&nbsp;(775/1851&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>JDPFID_04446</i></td>
+<td class="junction_gene">Ag43/Cah family autotransporter adhesin</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_721.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_721.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_136</td>
+<td align="center" class="junction_gene">=&nbsp;672</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">643 (0.230)<br>+A</td>
+<td rowspan="2" align="center">215/296</td>
+<td rowspan="2" align="center">4.4</td>
+<td rowspan="2" align="center">98.7%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8211;)</td>
+<td align="center" class="junction_gene"><i>&#8211;/&#8211;</i></td>
+<td class="junction_gene">&#8211;/&#8211;</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_721.html">?</a></td><td rowspan="1" class="junction_gene">contig_181</td>
+<td align="center" class="junction_gene">=&nbsp;447</td>
+<td align="center" class="junction_gene">17 (0.030)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8211;)</td>
+<td align="center" class="junction_gene"><i>&#8211;/&#8211;</i></td>
+<td class="junction_gene">&#8211;/&#8211;</td>
+</tr>
+</table>
+</body></html>

@@ -1,4 +1,0 @@
-Fri Feb 28 12:55:57 2025
-
-breseq -j 16 -r BTF2T1Ec.gbff -o ./BTF2 BTF2T2b_R1-trimmed.fastq.gz BTF2T2b_R2-trimmed.fastq.gz
-

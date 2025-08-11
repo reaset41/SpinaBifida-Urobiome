@@ -1,4 +1,0 @@
-Fri Feb 28 10:28:18 2025
-
-breseq -j 16 -r BTF69T-2.gbff -o ./BTF69 BTF69T-1_R1-trimmed.fastq.gz BTF69T-1_R2-trimmed.fastq.gz
-

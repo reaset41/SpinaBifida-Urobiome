@@ -1,0 +1,17 @@
+﻿type,mutation_category,locus_tag
+INS,small_indel,EIMLPH_00080
+SNP,snp_nonsynonymous,EIMLPH_01437
+SNP,snp_nonsynonymous,EIMLPH_01441
+SNP,snp_nonsynonymous,EIMLPH_02413
+SNP,snp_nonsynonymous,EIMLPH_02702
+SNP,snp_nonsynonymous,EIMLPH_03065
+SNP,snp_nonsynonymous,EIMLPH_03586
+SNP,snp_nonsynonymous,EIMLPH_04085
+SNP,snp_nonsynonymous,EIMLPH_04203
+SNP,snp_nonsense,EIMLPH_04254
+SNP,snp_nonsynonymous,EIMLPH_04341
+SNP,snp_nonsynonymous,EIMLPH_04457
+SNP,snp_nonsynonymous,EIMLPH_04900
+SNP,snp_nonsynonymous,EIMLPH_04947
+SNP,snp_nonsynonymous,EIMLPH_05180
+SNP,snp_nonsynonymous,EIMLPH_05252

@@ -1,0 +1,17 @@
+﻿type,mutation_category,locus_tag
+SNP,snp_nonsynonymous,BNMEEM_00135
+SNP,snp_nonsynonymous,BNMEEM_00141
+SNP,snp_nonsynonymous,BNMEEM_00369
+SNP,snp_nonsynonymous,BNMEEM_00690
+SNP,snp_nonsynonymous,BNMEEM_00957
+DEL,large_deletion,"BNMEEM_04768,BNMEEM_04769,BNMEEM_04770,BNMEEM_04771,BNMEEM_04772,BNMEEM_04773"
+SNP,snp_nonsynonymous,BNMEEM_01456
+SNP,snp_nonsynonymous,BNMEEM_02028
+DEL,small_indel,BNMEEM_02440
+SNP,snp_nonsynonymous,BNMEEM_02811
+SNP,snp_nonsynonymous,BNMEEM_02971
+SNP,snp_nonsynonymous,BNMEEM_03256
+SNP,snp_nonsynonymous,BNMEEM_03294
+SNP,snp_nonsynonymous,BNMEEM_03778
+SNP,snp_nonsynonymous,BNMEEM_03989
+SNP,snp_nonsynonymous,BNMEEM_03992

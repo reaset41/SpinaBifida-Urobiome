@@ -1,0 +1,16 @@
+Thu Apr 24 11:20:52 2025
+
+breseq -r BTF60T1.gbff -o BTF60T2 ./trimmed_reads/BTF60T2_R1-trimmed.fastq.gz ./trimmed_reads/BTF60T2_R2-trimmed.fastq.gz -j 16
+
+Fri Apr 25 12:05:19 2025
+
+breseq -j 16 -r BTF60T1.gbff -o ./BTF60T2 ./trimmed_reads/BTF60T2_R1-trimmed.fastq.gz ./trimmed_reads/BTF60T2_R2-trimmed.fastq.gz
+
+Fri Apr 25 12:22:48 2025
+
+breseq -j 16 -r BTF60T1.gbff -o ./BTF60T2 ./trimmed_reads/BTF60T2_R1-trimmed.fastq.gz ./trimmed_reads/BTF60T2_R2-trimmed.fastq.gz
+
+Fri Apr 25 14:19:53 2025
+
+breseq -j 16 -r BTF60T1.gbff -o ./BTF60T2 ./trimmed_reads/BTF60T2_R1-trimmed.fastq.gz ./trimmed_reads/BTF60T2_R2-trimmed.fastq.gz
+

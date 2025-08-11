@@ -1,0 +1,1895 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html>
+<head>
+<title>BRESEQ :: Mutation Predictions</title>
+<style type = "text/css">
+body {font-family: sans-serif; font-size: 11pt;}
+th {background-color: rgb(0,0,0); color: rgb(255,255,255);}
+table {background-color: rgb(1,0,0); color: rgb(0,0,0);}
+tr {background-color: rgb(255,255,255);}
+.mutation_in_codon {color:red; text-decoration : underline;}
+.snp_type_synonymous{color:green;}
+.snp_type_nonsynonymous{color:blue;}
+.snp_type_nonsense{color:red;}
+.mutation_header_row {background-color: rgb(0,130,0);}
+.read_alignment_header_row {background-color: rgb(255,0,0);}
+.missing_coverage_header_row {background-color: rgb(0,100,100);}
+.new_junction_header_row {background-color: rgb(0,0,155);}
+.copy_number_header_row {background-color: rgb(153,102,0);}
+.alternate_table_row_0 {background-color: rgb(255,255,255);}
+.alternate_table_row_1 {background-color: rgb(235,235,235);}
+.gray_table_row {background-color: rgb(230,230,245);}
+.polymorphism_table_row {background-color: rgb(160,255,160);}
+.highlight_table_row {background-color: rgb(192,255,255);}
+.reject_table_row {background-color: rgb(255,200,165);}
+.user_defined_table_row {background-color: rgb(255,255,0);}
+.information_table_row {background-color: rgb(200,255,255);}
+.junction_repeat {background-color: rgb(255,165,0)}
+.junction_gene {}
+.hidden { display: none; }
+.unhidden { display: block; }
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+  function hideTog(divID) {
+    var item = document.getElementById(divID);
+    if (item) {
+      item.className=(item.className=='hidden')?'unhidden':'hidden';
+    }
+  }
+  function showTog(butID) {
+    var button = document.getElementById(butID);
+    if (button) {
+      button.value=(button.value=='Show')?'Hide':'Show';
+    }
+  }
+</script>
+
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+<tr>
+<td><a href="http://barricklab.org/breseq"><img src="evidence/breseq_small.png" /></a></td>
+<td width="100%">
+<b><i>breseq</i></b>&nbsp;&nbsp;version 0.39.0&nbsp;&nbsp;
+<br><a href="index.html">mutation predictions</a> | 
+<a href="marginal.html">marginal predictions</a> | 
+<a href="summary.html">summary statistics</a> | 
+<a href="output.gd">genome diff</a> | 
+<a href="log.txt">command line log</a>
+</td></tr></table>
+
+<p>
+<!--Mutation Predictions -->
+<p>
+<!--Output Html_Mutation_Table_String-->
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="7" align="left" class="mutation_header_row">Predicted mutations</th></tr><tr>
+<th>evidence</th>
+<th>seq&nbsp;id</th>
+<th>position</th>
+<th>mutation</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">description</th>
+</tr>
+
+<!-- Item Lines -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_1.html">RA</a></td><!-- Evidence -->
+<td align="center">contig_1</td><!-- Seq_Id -->
+<td align="right">99,693</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">R21W</font>&nbsp;(<font class="mutation_in_codon">C</font>GG&rarr;<font class="mutation_in_codon">T</font>GG)&nbsp;</td>
+<td align="center"><i>focB</i>&nbsp;&larr;</td>
+<td align="left">formate transporter FocB</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_2.html">RA</a></td><!-- Evidence -->
+<td align="center">contig_1</td><!-- Seq_Id -->
+<td align="right">132,124</td><!-- Position -->
+<td align="center">T&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">N137N</font>&nbsp;(AA<font class="mutation_in_codon">T</font>&rarr;AA<font class="mutation_in_codon">C</font>)&nbsp;</td>
+<td align="center"><i>ypfG</i>&nbsp;&rarr;</td>
+<td align="left">Uncharacterized protein YpfG</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_3.html">RA</a></td><!-- Evidence -->
+<td align="center">contig_1</td><!-- Seq_Id -->
+<td align="right">185,042</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">N192S</font>&nbsp;(A<font class="mutation_in_codon">A</font>T&rarr;A<font class="mutation_in_codon">G</font>T)&nbsp;</td>
+<td align="center"><i>eAL</i>&nbsp;&rarr;</td>
+<td align="left">EAL domain, c&#8209;di&#8209;GMP&#8209;specific phosphodiesterase class I (or its enzymatically inactive variant)</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_4.html">RA</a></td><!-- Evidence -->
+<td align="center">contig_1</td><!-- Seq_Id -->
+<td align="right">185,444</td><!-- Position -->
+<td align="center">C&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">A326E</font>&nbsp;(G<font class="mutation_in_codon">C</font>G&rarr;G<font class="mutation_in_codon">A</font>G)&nbsp;</td>
+<td align="center"><i>eAL</i>&nbsp;&rarr;</td>
+<td align="left">EAL domain, c&#8209;di&#8209;GMP&#8209;specific phosphodiesterase class I (or its enzymatically inactive variant)</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_5.html">RA</a></td><!-- Evidence -->
+<td align="center">contig_11</td><!-- Seq_Id -->
+<td align="right">133,368</td><!-- Position -->
+<td align="center">(A)<sub>6&rarr;5</sub></td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;112/&#8209;99)</td>
+<td align="center"><i>ettA</i>&nbsp;&larr;&nbsp;/&nbsp;&rarr;&nbsp;<i>sltY</i></td>
+<td align="left">energy&#8209;dependent translational throttle protein EttA/murein transglycosylase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_6.html">RA</a></td><!-- Evidence -->
+<td align="center">contig_13</td><!-- Seq_Id -->
+<td align="right">6,180</td><!-- Position -->
+<td align="center">G&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">Q383H</font>&nbsp;(CA<font class="mutation_in_codon">G</font>&rarr;CA<font class="mutation_in_codon">C</font>)&nbsp;</td>
+<td align="center"><i>opgE</i>&nbsp;&rarr;</td>
+<td align="left">phosphoethanolamine transferase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_7.html">RA</a></td><!-- Evidence -->
+<td align="center">contig_13</td><!-- Seq_Id -->
+<td align="right">28,236</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsense">W241*</font>&nbsp;(TG<font class="mutation_in_codon">G</font>&rarr;TG<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>hlyD</i>&nbsp;&rarr;</td>
+<td align="left">secretion protein HlyD</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_8.html">RA</a></td><!-- Evidence -->
+<td align="center">contig_13</td><!-- Seq_Id -->
+<td align="right">103,951</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">A292V</font>&nbsp;(G<font class="mutation_in_codon">C</font>G&rarr;G<font class="mutation_in_codon">T</font>G)&nbsp;</td>
+<td align="center"><i>gltA</i>&nbsp;&rarr;</td>
+<td align="left">citrate synthase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_9.html">RA</a></td><!-- Evidence -->
+<td align="center">contig_14</td><!-- Seq_Id -->
+<td align="right">77,954</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">V126I</font>&nbsp;(<font class="mutation_in_codon">G</font>TT&rarr;<font class="mutation_in_codon">A</font>TT)&nbsp;</td>
+<td align="center"><i>aaeR</i>&nbsp;&rarr;</td>
+<td align="left">HTH&#8209;type transcriptional activator AaeR</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_10.html">RA</a></td><!-- Evidence -->
+<td align="center">contig_15</td><!-- Seq_Id -->
+<td align="right">89,028</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">V127V</font>&nbsp;(GT<font class="mutation_in_codon">C</font>&rarr;GT<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>DBOGNM_03754</i>&nbsp;&larr;</td>
+<td align="left">DNA modification methylase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_11.html">RA</a></td><!-- Evidence -->
+<td align="center">contig_17</td><!-- Seq_Id -->
+<td align="right">5,405</td><!-- Position -->
+<td align="center">A&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">V111E</font>&nbsp;(G<font class="mutation_in_codon">T</font>A&rarr;G<font class="mutation_in_codon">A</font>A)&nbsp;</td>
+<td align="center"><i>yihG</i>&nbsp;&larr;</td>
+<td align="left">putative acyltransferase YihG</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_12.html">RA</a></td><!-- Evidence -->
+<td align="center">contig_2</td><!-- Seq_Id -->
+<td align="right">92,825</td><!-- Position -->
+<td align="center">T&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">L184S</font>&nbsp;(T<font class="mutation_in_codon">T</font>G&rarr;T<font class="mutation_in_codon">C</font>G)&nbsp;</td>
+<td align="center"><i>mdaB</i>&nbsp;&rarr;</td>
+<td align="left">NAD(P)H oxidoreductase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_13.html">RA</a></td><!-- Evidence -->
+<td align="center">contig_2</td><!-- Seq_Id -->
+<td align="right">128,715</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">R292C</font>&nbsp;(<font class="mutation_in_codon">C</font>GT&rarr;<font class="mutation_in_codon">T</font>GT)&nbsp;</td>
+<td align="center"><i>ompF</i>&nbsp;&larr;</td>
+<td align="left">outer membrane protein F OmpF</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_14.html">RA</a></td><!-- Evidence -->
+<td align="center">contig_2</td><!-- Seq_Id -->
+<td align="right">129,624</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;36/+566)</td>
+<td align="center"><i>ompF</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>asnS</i></td>
+<td align="left">outer membrane protein F OmpF/asparagine&#8209;&#8209;tRNA ligase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_15.html">RA</a></td><!-- Evidence -->
+<td align="center">contig_2</td><!-- Seq_Id -->
+<td align="right">129,710</td><!-- Position -->
+<td align="center">T&rarr;A</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;122/+480)</td>
+<td align="center"><i>ompF</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>asnS</i></td>
+<td align="left">outer membrane protein F OmpF/asparagine&#8209;&#8209;tRNA ligase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_16.html">RA</a></td><!-- Evidence -->
+<td align="center">contig_2</td><!-- Seq_Id -->
+<td align="right">582,818</td><!-- Position -->
+<td align="center">T&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">L230P</font>&nbsp;(C<font class="mutation_in_codon">T</font>T&rarr;C<font class="mutation_in_codon">C</font>T)&nbsp;</td>
+<td align="center"><i>tehA</i>&nbsp;&rarr;</td>
+<td align="left">dicarboxylate transporter/tellurite&#8209;resistance protein TehA</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_17.html">RA</a></td><!-- Evidence -->
+<td align="center">contig_20</td><!-- Seq_Id -->
+<td align="right">16,585</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">A272T</font>&nbsp;(<font class="mutation_in_codon">G</font>CG&rarr;<font class="mutation_in_codon">A</font>CG)&nbsp;</td>
+<td align="center"><i>yiaN</i>&nbsp;&larr;</td>
+<td align="left">2,3&#8209;diketo&#8209;L&#8209;gulonate TRAP transporter large permease YiaN</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_18.html">RA</a></td><!-- Evidence -->
+<td align="center">contig_21</td><!-- Seq_Id -->
+<td align="right">52,703</td><!-- Position -->
+<td align="center">+T</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(259/330&nbsp;nt)</td>
+<td align="center"><i>DBOGNM_04231</i>&nbsp;&rarr;</td>
+<td align="left">Putative signal transduction protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_19.html">RA</a></td><!-- Evidence -->
+<td align="center">contig_3</td><!-- Seq_Id -->
+<td align="right">74</td><!-- Position -->
+<td align="center">A&rarr;T</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8211;/+194)</td>
+<td align="center"><i>&#8211;</i>&nbsp;/&nbsp;&larr;&nbsp;<i>katE</i></td>
+<td align="left">&#8211;/catalase HPII</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_20.html">RA</a></td><!-- Evidence -->
+<td align="center">contig_3</td><!-- Seq_Id -->
+<td align="right">53,100</td><!-- Position -->
+<td align="center">&Delta;1&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(739/1488&nbsp;nt)</td>
+<td align="center"><i>sufB</i>&nbsp;&rarr;</td>
+<td align="left">Fe&#8209;S cluster assembly protein SufB</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_21.html">RA</a></td><!-- Evidence -->
+<td align="center">contig_3</td><!-- Seq_Id -->
+<td align="right">169,296</td><!-- Position -->
+<td align="center">G&rarr;T</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;119/+74)</td>
+<td align="center"><i>ydfA</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>DBOGNM_01556</i></td>
+<td align="left">Uncharacterized protein YdfA/Helix&#8209;turn&#8209;helix domain&#8209;containing protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_22.html">RA</a></td><!-- Evidence -->
+<td align="center">contig_3</td><!-- Seq_Id -->
+<td align="right">222,243</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">R103K</font>&nbsp;(A<font class="mutation_in_codon">G</font>G&rarr;A<font class="mutation_in_codon">A</font>G)&nbsp;</td>
+<td align="center"><i>DBOGNM_01620</i>&nbsp;&rarr;</td>
+<td align="left">Permease IIC component</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/MC_PLOT_441.html">MC</a>&nbsp;<a href="evidence/JC_660.html">JC</a></td><!-- Evidence -->
+<td align="center">contig_3</td><!-- Seq_Id -->
+<td align="right">226,340</td><!-- Position -->
+<td align="center">&Delta;1,779&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center"></td>
+<td align="center"><i>[DBOGNM_01623]</i>&#8211;<i>marR</i></td>
+<td align="left"><i>[DBOGNM_01623]</i>, <i>marB</i>, <i>marA</i>, <i>marR</i></td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_24.html">RA</a></td><!-- Evidence -->
+<td align="center">contig_30</td><!-- Seq_Id -->
+<td align="right">14,977</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">R317C</font>&nbsp;(<font class="mutation_in_codon">C</font>GC&rarr;<font class="mutation_in_codon">T</font>GC)&nbsp;</td>
+<td align="center"><i>rpoA</i>&nbsp;&rarr;</td>
+<td align="left">DNA&#8209;directed RNA polymerase subunit alpha</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_25.html">RA</a></td><!-- Evidence -->
+<td align="center">contig_31</td><!-- Seq_Id -->
+<td align="right">22,855</td><!-- Position -->
+<td align="center">A&rarr;C</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;149/&#8209;118)</td>
+<td align="center"><i>ansP</i>&nbsp;&larr;&nbsp;/&nbsp;&rarr;&nbsp;<i>yncG</i></td>
+<td align="left">L&#8209;asparagine permease/Uncharacterized GST&#8209;like protein YncG</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_26.html">RA</a></td><!-- Evidence -->
+<td align="center">contig_5</td><!-- Seq_Id -->
+<td align="right">36,898</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+99/&#8209;9)</td>
+<td align="center"><i>ytfF</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>ytfE</i></td>
+<td align="left">Inner membrane protein YtfF/iron&#8209;sulfur cluster repair protein YtfE</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_27.html">RA</a></td><!-- Evidence -->
+<td align="center">contig_6</td><!-- Seq_Id -->
+<td align="right">71,785</td><!-- Position -->
+<td align="center">T&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">*101G</font>&nbsp;(<font class="mutation_in_codon">T</font>GA&rarr;<font class="mutation_in_codon">G</font>GA)&nbsp;</td>
+<td align="center"><i>DBOGNM_02222</i>&nbsp;&rarr;</td>
+<td align="left">Lipoprotein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_28.html">RA</a></td><!-- Evidence -->
+<td align="center">contig_6</td><!-- Seq_Id -->
+<td align="right">76,319</td><!-- Position -->
+<td align="center">(T)<sub>14&rarr;13</sub></td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(443/579&nbsp;nt)</td>
+<td align="center"><i>spaS</i>&nbsp;&rarr;</td>
+<td align="left">Surface presentation of antigens protein SpaS</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_29.html">RA</a></td><!-- Evidence -->
+<td align="center">contig_6</td><!-- Seq_Id -->
+<td align="right">81,030</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">I125I</font>&nbsp;(AT<font class="mutation_in_codon">C</font>&rarr;AT<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>DBOGNM_02238</i>&nbsp;&rarr;</td>
+<td align="left">type III secretion apparatus protein OrgA/MxiK</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_30.html">RA</a></td><!-- Evidence -->
+<td align="center">contig_6</td><!-- Seq_Id -->
+<td align="right">135,448</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;142/&#8209;67)</td>
+<td align="center"><i>trnfM</i>&nbsp;&larr;&nbsp;/&nbsp;&rarr;&nbsp;<i>mltA</i></td>
+<td align="left">tRNA&#8209;fMet(cat)/murein transglycosylase A</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_31.html">RA</a></td><!-- Evidence -->
+<td align="center">contig_6</td><!-- Seq_Id -->
+<td align="right">164,987</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsense">Q884*</font>&nbsp;(<font class="mutation_in_codon">C</font>AA&rarr;<font class="mutation_in_codon">T</font>AA)&nbsp;</td>
+<td align="center"><i>barA</i>&nbsp;&larr;</td>
+<td align="left">two&#8209;component sensor histidine kinase BarA</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_32.html">RA</a></td><!-- Evidence -->
+<td align="center">contig_9</td><!-- Seq_Id -->
+<td align="right">64,382</td><!-- Position -->
+<td align="center">C&rarr;A</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+324/&#8209;114)</td>
+<td align="center"><i>yhgF</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>feoA</i></td>
+<td align="left">Protein YhgF/ferrous iron transporter A</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_33.html">RA</a></td><!-- Evidence -->
+<td align="center">contig_9</td><!-- Seq_Id -->
+<td align="right">64,479</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+421/&#8209;17)</td>
+<td align="center"><i>yhgF</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>feoA</i></td>
+<td align="left">Protein YhgF/ferrous iron transporter A</td>
+</tr>
+<!-- End Table Row -->
+</table>
+<p>
+<table border="0" cellspacing="1" cellpadding="3" width="100%">
+<tr><th colspan="11" align="left" class="missing_coverage_header_row">Unassigned missing coverage evidence</th></tr>
+<tr><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>seq&nbsp;id</th>
+<th>start</th>
+<th>end</th>
+<th>size</th>
+<th>&larr;reads</th>
+<th>reads&rarr;</th>
+<th>gene</th>
+<th width="100%">description</th>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_442.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_442.html">*</a></td>
+<td><a href="evidence/MC_PLOT_442.html">&divide;</a></td>
+<td>contig_6</td>
+<td align="right">178399</td>
+<td align="right">179493</td>
+<td align="right">1095</td>
+<td align="center">563&nbsp;[550]</td>
+<td align="center">[558]&nbsp;563</td>
+<td align="center"><i>queE/ygcE</i></td>
+<td align="left">7&#8209;carboxy&#8209;7&#8209;deazaguanine synthase QueE/Uncharacterized sugar kinase YgcE</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_443.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_443.html">*</a></td>
+<td><a href="evidence/MC_PLOT_443.html">&divide;</a></td>
+<td>contig_60</td>
+<td align="right">392</td>
+<td align="right">396</td>
+<td align="right">5</td>
+<td align="center">874&nbsp;[11]</td>
+<td align="center">[0]&nbsp;NA</td>
+<td align="center"><i>StyR&#8209;44</i></td>
+<td align="left">Salmonella enterica Typhi npcRNA 44</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_444.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_444.html">*</a></td>
+<td><a href="evidence/MC_PLOT_444.html">&divide;</a></td>
+<td>contig_62</td>
+<td align="right">368</td>
+<td align="right">389</td>
+<td align="right">22</td>
+<td align="center">1792&nbsp;[293]</td>
+<td align="center">[0]&nbsp;NA</td>
+<td align="center"><i>&#8211;/&#8211;</i></td>
+<td align="left">&#8211;/&#8211;</td>
+</tr>
+</table>
+<p>
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="12" align="left" class="new_junction_header_row">Unassigned new junction evidence</th></tr>
+<!-- Header Lines for New Junction -->
+<tr>
+<th colspan="2">&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th>position</th>
+<th>reads&nbsp;(cov)</th>
+<th>reads&nbsp;(cov)</th>
+<th>score</th>
+<th>skew</th>
+<th>freq</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">product</th>
+</tr>
+
+<!-- Item Lines for New Junction -->
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_468.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_468.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_1</td>
+<td align="center" class="junction_gene">345048&nbsp;=</td><td align="center" class="junction_gene">48 (0.060)</td><td rowspan="2" align="center">433 (0.090)<br>+49 bp</td>
+<td rowspan="2" align="center">117/200</td>
+<td rowspan="2" align="center">3.0</td>
+<td rowspan="2" align="center">96.4%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+70/+58)</td>
+<td align="center" class="junction_gene"><i>yfaL/ubiG</i></td>
+<td class="junction_gene">AIDA&#8209;I family autotransporter adhesin YfaL/EhaC/bifunctional 2&#8209;polyprenyl&#8209;6&#8209;hydroxyphenol methylase/3&#8209;demethylubiquinol 3&#8209;O&#8209;methyltransferase UbiG</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_468.html">?</a></td><td rowspan="1" class="junction_gene">contig_48</td>
+<td align="center" class="junction_gene">1&nbsp;=</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8211;)</td>
+<td align="center" class="junction_gene"><i>&#8211;/&#8211;</i></td>
+<td class="junction_gene">&#8211;/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_502.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_502.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_11</td>
+<td align="center" class="junction_gene">=&nbsp;149861</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">610 (0.150)<br>+66 bp</td>
+<td rowspan="2" align="center">129/166</td>
+<td rowspan="2" align="center">0.2</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+51/&#8211;)</td>
+<td align="center" class="junction_gene"><i>yaaX/&#8211;</i></td>
+<td class="junction_gene">Uncharacterized protein YaaX/&#8211;</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_502.html">?</a></td><td rowspan="1" class="junction_gene">contig_48</td>
+<td align="center" class="junction_gene">1&nbsp;=</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8211;)</td>
+<td align="center" class="junction_gene"><i>&#8211;/&#8211;</i></td>
+<td class="junction_gene">&#8211;/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_503.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_503.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_12</td>
+<td align="center" class="junction_gene">2&nbsp;=</td><td align="center" class="junction_gene">20 (0.030)</td><td rowspan="2" align="center">1921 (1.340)<br>+G</td>
+<td rowspan="2" align="center">280/296</td>
+<td rowspan="2" align="center">0.0</td>
+<td rowspan="2" align="center">99.5%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/+444)</td>
+<td align="center" class="junction_gene"><i>&#8211;/ybfA</i></td>
+<td class="junction_gene">&#8211;/Uncharacterized protein YbfA</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_503.html">?</a></td><td rowspan="1" class="junction_gene">contig_53</td>
+<td align="center" class="junction_gene">=&nbsp;909</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8211;)</td>
+<td align="center" class="junction_gene"><i>&#8211;/&#8211;</i></td>
+<td class="junction_gene">&#8211;/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_504.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_504.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_12</td>
+<td align="center" class="junction_gene">=&nbsp;204</td><td align="center" class="junction_gene">1122 (1.470)</td><td rowspan="2" align="center">577 (0.840)</td>
+<td rowspan="2" align="center">182/260</td>
+<td rowspan="2" align="center">0.9</td>
+<td rowspan="2" align="center">54.1%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/+242)</td>
+<td align="center" class="junction_gene"><i>&#8211;/ybfA</i></td>
+<td class="junction_gene">&#8211;/Uncharacterized protein YbfA</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_504.html">?</a></td><td rowspan="1" class="junction_gene">contig_17</td>
+<td align="center" class="junction_gene">=&nbsp;87791</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(+158/&#8211;)</td>
+<td align="center" class="junction_gene"><i>rpmE/&#8211;</i></td>
+<td class="junction_gene">50S ribosomal protein L31/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_511.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_511.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_12</td>
+<td align="center" class="junction_gene">=&nbsp;136003</td><td align="center" class="junction_gene">1454 (1.900)</td><td rowspan="2" align="center">776 (1.050)</td>
+<td rowspan="2" align="center">222/298</td>
+<td rowspan="2" align="center">0.0</td>
+<td rowspan="2" align="center">51.6%</td>
+<td align="center" class="junction_gene">coding&nbsp;(959/1902&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>DBOGNM_03416</i></td>
+<td class="junction_gene">Type VI secretion system Vgr family protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_511.html">?</a></td><td rowspan="1" class="junction_gene">contig_58</td>
+<td align="center" class="junction_gene">=&nbsp;430</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8211;)</td>
+<td align="center" class="junction_gene"><i>&#8211;/&#8211;</i></td>
+<td class="junction_gene">&#8211;/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_512.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_512.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_12</td>
+<td align="center" class="junction_gene">=&nbsp;136547</td><td align="center" class="junction_gene">942 (1.230)</td><td rowspan="2" align="center">626 (0.980)<br>+29 bp</td>
+<td rowspan="2" align="center">152/240</td>
+<td rowspan="2" align="center">2.1</td>
+<td rowspan="2" align="center">62.3%</td>
+<td align="center" class="junction_gene">coding&nbsp;(1503/1902&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>DBOGNM_03416</i></td>
+<td class="junction_gene">Type VI secretion system Vgr family protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_512.html">?</a></td><td rowspan="1" class="junction_gene">contig_41</td>
+<td align="center" class="junction_gene">=&nbsp;1723</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;4/&#8211;)</td>
+<td align="center" class="junction_gene"><i>DBOGNM_04630/&#8211;</i></td>
+<td class="junction_gene">hypothetical protein/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_525.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_525.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_13</td>
+<td align="center" class="junction_gene">=&nbsp;119107</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">1187 (1.600)<br>+CTGATACA</td>
+<td rowspan="2" align="center">218/282</td>
+<td rowspan="2" align="center">0.0</td>
+<td rowspan="2" align="center">81.2%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;34/&#8211;)</td>
+<td align="center" class="junction_gene"><i>yhhI/&#8211;</i></td>
+<td class="junction_gene">ISAs1 family transposase/&#8211;</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_525.html">?</a></td><td rowspan="1" class="junction_gene">contig_43</td>
+<td align="center" class="junction_gene">100&nbsp;=</td>
+<td align="center" class="junction_gene">581 (0.680)</td><td align="center" class="junction_gene">coding&nbsp;(237/255&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>ybfQ</i></td>
+<td class="junction_gene">Inactive transposase YbfQ</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_526.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_526.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_14</td>
+<td align="center" class="junction_gene">1&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">5479 (0.750)</td>
+<td rowspan="2" align="center">263/298</td>
+<td rowspan="2" align="center">0.0</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/+116)</td>
+<td align="center" class="junction_gene"><i>&#8211;/mtr</i></td>
+<td class="junction_gene">&#8211;/tryptophan permease</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_526.html">?</a></td><td rowspan="1" class="junction_gene">contig_48</td>
+<td align="center" class="junction_gene">1&nbsp;=</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8211;)</td>
+<td align="center" class="junction_gene"><i>&#8211;/&#8211;</i></td>
+<td class="junction_gene">&#8211;/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_540.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_540.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_14</td>
+<td align="center" class="junction_gene">=&nbsp;111310</td><td align="center" class="junction_gene">567 (0.710)</td><td rowspan="2" align="center">1175 (0.340)</td>
+<td rowspan="2" align="center">224/298</td>
+<td rowspan="2" align="center">0.4</td>
+<td rowspan="2" align="center">80.6%</td>
+<td align="center" class="junction_gene">noncoding&nbsp;(11/116&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>rrf</i></td>
+<td class="junction_gene">5S ribosomal RNA</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_540.html">?</a></td><td rowspan="1" class="junction_gene">contig_36</td>
+<td align="center" class="junction_gene">=&nbsp;3028</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(+104/&#8211;)</td>
+<td align="center" class="junction_gene"><i>rrl/&#8211;</i></td>
+<td class="junction_gene">23S ribosomal RNA/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_545.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_545.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_16</td>
+<td align="center" class="junction_gene">1&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">636 (0.830)<br>+AAAAAA</td>
+<td rowspan="2" align="center">182/286</td>
+<td rowspan="2" align="center">2.7</td>
+<td rowspan="2" align="center">63.7%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/+11)</td>
+<td align="center" class="junction_gene"><i>&#8211;/hemG</i></td>
+<td class="junction_gene">&#8211;/menaquinone&#8209;dependent protoporphyrinogen IX dehydrogenase</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_545.html">?</a></td><td rowspan="1" class="junction_gene">contig_24</td>
+<td align="center" class="junction_gene">=&nbsp;129</td>
+<td align="center" class="junction_gene">754 (0.930)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/+14)</td>
+<td align="center" class="junction_gene"><i>&#8211;/murI</i></td>
+<td class="junction_gene">&#8211;/glutamate racemase</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_549.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_549.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_17</td>
+<td align="center" class="junction_gene">1&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">502 (0.930)<br>+50 bp</td>
+<td rowspan="2" align="center">145/198</td>
+<td rowspan="2" align="center">0.6</td>
+<td rowspan="2" align="center">52.6%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/+39)</td>
+<td align="center" class="junction_gene"><i>&#8211;/mobB</i></td>
+<td class="junction_gene">&#8211;/molybdopterin&#8209;guanine dinucleotide biosynthesis protein MobB</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_549.html">?</a></td><td rowspan="1" class="junction_gene">contig_28</td>
+<td align="center" class="junction_gene">32711&nbsp;=</td>
+<td align="center" class="junction_gene">1361 (1.660)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;41/+14)</td>
+<td align="center" class="junction_gene"><i>trnD/rrf</i></td>
+<td class="junction_gene">tRNA&#8209;Asp(gtc)/5S ribosomal RNA</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_556.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_556.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_17</td>
+<td align="center" class="junction_gene">63916&nbsp;=</td><td align="center" class="junction_gene">83 (0.100)</td><td rowspan="2" align="center">627 (0.130)<br>+49 bp</td>
+<td rowspan="2" align="center">144/200</td>
+<td rowspan="2" align="center">0.8</td>
+<td rowspan="2" align="center">95.8%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+13/+1)</td>
+<td align="center" class="junction_gene"><i>yiiM/naRNA4</i></td>
+<td class="junction_gene">6&#8209;hydroxyaminopurine reductase/Nucleoid&#8209;associated noncoding RNA 4 (CssrE)</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_556.html">?</a></td><td rowspan="1" class="junction_gene">contig_48</td>
+<td align="center" class="junction_gene">1&nbsp;=</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8211;)</td>
+<td align="center" class="junction_gene"><i>&#8211;/&#8211;</i></td>
+<td class="junction_gene">&#8211;/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_569.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_569.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_19</td>
+<td align="center" class="junction_gene">=&nbsp;60743</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">444 (0.100)<br>+55 bp</td>
+<td rowspan="2" align="center">134/188</td>
+<td rowspan="2" align="center">0.7</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+29/&#8211;)</td>
+<td align="center" class="junction_gene"><i>yggR/&#8211;</i></td>
+<td class="junction_gene">Uncharacterized protein YggR/&#8211;</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_569.html">?</a></td><td rowspan="1" class="junction_gene">contig_48</td>
+<td align="center" class="junction_gene">1&nbsp;=</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8211;)</td>
+<td align="center" class="junction_gene"><i>&#8211;/&#8211;</i></td>
+<td class="junction_gene">&#8211;/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_590.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_590.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_2</td>
+<td align="center" class="junction_gene">127038&nbsp;=</td><td align="center" class="junction_gene">55 (0.080)</td><td rowspan="2" align="center">1782 (0.370)<br>+49 bp</td>
+<td rowspan="2" align="center">171/200</td>
+<td rowspan="2" align="center">0.0</td>
+<td rowspan="2" align="center">99.0%</td>
+<td align="center" class="junction_gene">noncoding&nbsp;(38/43&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>ES036</i></td>
+<td class="junction_gene">ES036 (CssrF) sRNA</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_590.html">?</a></td><td rowspan="1" class="junction_gene">contig_48</td>
+<td align="center" class="junction_gene">1&nbsp;=</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8211;)</td>
+<td align="center" class="junction_gene"><i>&#8211;/&#8211;</i></td>
+<td class="junction_gene">&#8211;/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_600.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_600.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_21</td>
+<td align="center" class="junction_gene">=&nbsp;54497</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">1399 (1.070)</td>
+<td rowspan="2" align="center">268/298</td>
+<td rowspan="2" align="center">0.0</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;513/&#8211;)</td>
+<td align="center" class="junction_gene"><i>yeaQ/&#8211;</i></td>
+<td class="junction_gene">UPF0410 protein YeaQ/&#8211;</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_600.html">?</a></td><td rowspan="1" class="junction_gene">contig_52</td>
+<td align="center" class="junction_gene">1&nbsp;=</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8211;)</td>
+<td align="center" class="junction_gene"><i>&#8211;/&#8211;</i></td>
+<td class="junction_gene">&#8211;/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_603.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_603.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_22</td>
+<td align="center" class="junction_gene">=&nbsp;45322</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">895 (0.800)</td>
+<td rowspan="2" align="center">223/298</td>
+<td rowspan="2" align="center">0.3</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;49/&#8211;)</td>
+<td align="center" class="junction_gene"><i>DBOGNM_04277/&#8211;</i></td>
+<td class="junction_gene">DUF4329 domain&#8209;containing protein/&#8211;</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_603.html">?</a></td><td rowspan="1" class="junction_gene">contig_46</td>
+<td align="center" class="junction_gene">1&nbsp;=</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8209;29)</td>
+<td align="center" class="junction_gene"><i>&#8211;/DBOGNM_04636</i></td>
+<td class="junction_gene">&#8211;/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_604.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_604.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_23</td>
+<td align="center" class="junction_gene">1&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">755 (0.670)</td>
+<td rowspan="2" align="center">233/298</td>
+<td rowspan="2" align="center">0.2</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/+453)</td>
+<td align="center" class="junction_gene"><i>&#8211;/ccp</i></td>
+<td class="junction_gene">&#8211;/cytochrome c peroxidase</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_604.html">?</a></td><td rowspan="1" class="junction_gene">contig_47</td>
+<td align="center" class="junction_gene">=&nbsp;1151</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(+573/&#8211;)</td>
+<td align="center" class="junction_gene"><i>DBOGNM_04637/&#8211;</i></td>
+<td class="junction_gene">hypothetical protein/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_606.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_606.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_24</td>
+<td align="center" class="junction_gene">=&nbsp;129</td><td align="center" class="junction_gene">754 (0.930)</td><td rowspan="2" align="center">612 (0.760)<br>+TTTTTT</td>
+<td rowspan="2" align="center">189/286</td>
+<td rowspan="2" align="center">2.3</td>
+<td rowspan="2" align="center">62.8%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/+14)</td>
+<td align="center" class="junction_gene"><i>&#8211;/murI</i></td>
+<td class="junction_gene">&#8211;/glutamate racemase</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_606.html">?</a></td><td rowspan="1" class="junction_gene">contig_8</td>
+<td align="center" class="junction_gene">1&nbsp;=</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8209;114)</td>
+<td align="center" class="junction_gene"><i>&#8211;/yieP</i></td>
+<td class="junction_gene">&#8211;/Uncharacterized HTH&#8209;type transcriptional regulator YieP</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_614.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_614.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_24</td>
+<td align="center" class="junction_gene">=&nbsp;40552</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">764 (0.960)<br>+ATACAGG</td>
+<td rowspan="2" align="center">192/284</td>
+<td rowspan="2" align="center">1.9</td>
+<td rowspan="2" align="center">57.2%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;27/&#8211;)</td>
+<td align="center" class="junction_gene"><i>rhsA/&#8211;</i></td>
+<td class="junction_gene">RHS element core protein/&#8211;</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_614.html">?</a></td><td rowspan="1" class="junction_gene">contig_8</td>
+<td align="center" class="junction_gene">200684&nbsp;=</td>
+<td align="center" class="junction_gene">1199 (1.380)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;553/&#8211;)</td>
+<td align="center" class="junction_gene"><i>yibG/&#8211;</i></td>
+<td class="junction_gene">Uncharacterized protein YibG/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_615.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_615.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_25</td>
+<td align="center" class="junction_gene">1&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">621 (0.590)</td>
+<td rowspan="2" align="center">194/298</td>
+<td rowspan="2" align="center">1.1</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8209;162)</td>
+<td align="center" class="junction_gene"><i>&#8211;/gadC</i></td>
+<td class="junction_gene">&#8211;/acid resistance gamma&#8209;aminobutyrate antiporter GadC</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_615.html">?</a></td><td rowspan="1" class="junction_gene">contig_47</td>
+<td align="center" class="junction_gene">1&nbsp;=</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8209;41)</td>
+<td align="center" class="junction_gene"><i>&#8211;/DBOGNM_04637</i></td>
+<td class="junction_gene">&#8211;/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_617.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_617.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_25</td>
+<td align="center" class="junction_gene">37305&nbsp;=</td><td align="center" class="junction_gene">720 (1.060)</td><td rowspan="2" align="center">734 (1.020)</td>
+<td rowspan="2" align="center">206/296</td>
+<td rowspan="2" align="center">0.4</td>
+<td rowspan="2" align="center">63.7%</td>
+<td align="center" class="junction_gene">coding&nbsp;(496/513&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>DBOGNM_04379</i></td>
+<td class="junction_gene">ISAs1 family transposase</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_617.html">?</a></td><td rowspan="1" class="junction_gene">contig_27</td>
+<td align="center" class="junction_gene">9&nbsp;=</td>
+<td align="center" class="junction_gene">123 (0.160)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8209;59)</td>
+<td align="center" class="junction_gene"><i>&#8211;/tnp</i></td>
+<td class="junction_gene">&#8211;/ISAs1 family ISEc1 transposase</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_618.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_618.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_25</td>
+<td align="center" class="junction_gene">37307&nbsp;=</td><td align="center" class="junction_gene">724 (1.070)</td><td rowspan="2" align="center">1680 (2.410)</td>
+<td rowspan="2" align="center">249/286</td>
+<td rowspan="2" align="center">0.0</td>
+<td rowspan="2" align="center">82.9%</td>
+<td align="center" class="junction_gene">coding&nbsp;(494/513&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>DBOGNM_04379</i></td>
+<td class="junction_gene">ISAs1 family transposase</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_618.html">?</a></td><td rowspan="1" class="junction_gene">contig_27</td>
+<td align="center" class="junction_gene">7&nbsp;=</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8209;61)</td>
+<td align="center" class="junction_gene"><i>&#8211;/tnp</i></td>
+<td class="junction_gene">&#8211;/ISAs1 family ISEc1 transposase</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_619.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_619.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_25</td>
+<td align="center" class="junction_gene">=&nbsp;37834</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">795 (1.100)<br>+CTGATACA</td>
+<td rowspan="2" align="center">205/282</td>
+<td rowspan="2" align="center">0.0</td>
+<td rowspan="2" align="center">74.3%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;34/&#8211;)</td>
+<td align="center" class="junction_gene"><i>DBOGNM_04379/&#8211;</i></td>
+<td class="junction_gene">ISAs1 family transposase/&#8211;</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_619.html">?</a></td><td rowspan="1" class="junction_gene">contig_43</td>
+<td align="center" class="junction_gene">100&nbsp;=</td>
+<td align="center" class="junction_gene">581 (0.680)</td><td align="center" class="junction_gene">coding&nbsp;(237/255&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>ybfQ</i></td>
+<td class="junction_gene">Inactive transposase YbfQ</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_623.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_623.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_26</td>
+<td align="center" class="junction_gene">=&nbsp;35455</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">443 (1.020)</td>
+<td rowspan="2" align="center">129/176</td>
+<td rowspan="2" align="center">0.1</td>
+<td rowspan="2" align="center">33.4%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+200/&#8211;)</td>
+<td align="center" class="junction_gene"><i>ruvX/&#8211;</i></td>
+<td class="junction_gene">Holliday junction resolvase RuvX/&#8211;</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_623.html">?</a></td><td rowspan="1" class="junction_gene">contig_3</td>
+<td align="center" class="junction_gene">=&nbsp;80</td>
+<td align="center" class="junction_gene">1770 (4.500)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/+188)</td>
+<td align="center" class="junction_gene"><i>&#8211;/katE</i></td>
+<td class="junction_gene">&#8211;/catalase HPII</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_633.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_633.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_28</td>
+<td align="center" class="junction_gene">1&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">787 (0.770)</td>
+<td rowspan="2" align="center">234/298</td>
+<td rowspan="2" align="center">0.2</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/+584)</td>
+<td align="center" class="junction_gene"><i>&#8211;/tssD2</i></td>
+<td class="junction_gene">&#8211;/Type VI secretion system protein, Hcp family</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_633.html">?</a></td><td rowspan="1" class="junction_gene">contig_63</td>
+<td align="center" class="junction_gene">=&nbsp;337</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8211;)</td>
+<td align="center" class="junction_gene"><i>&#8211;/&#8211;</i></td>
+<td class="junction_gene">&#8211;/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_637.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_637.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_28</td>
+<td align="center" class="junction_gene">32711&nbsp;=</td><td align="center" class="junction_gene">1361 (1.660)</td><td rowspan="2" align="center">498 (0.960)<br>+50 bp</td>
+<td rowspan="2" align="center">149/198</td>
+<td rowspan="2" align="center">0.2</td>
+<td rowspan="2" align="center">52.4%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;41/+14)</td>
+<td align="center" class="junction_gene"><i>trnD/rrf</i></td>
+<td class="junction_gene">tRNA&#8209;Asp(gtc)/5S ribosomal RNA</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_637.html">?</a></td><td rowspan="1" class="junction_gene">contig_32</td>
+<td align="center" class="junction_gene">=&nbsp;11694</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;261/&#8211;)</td>
+<td align="center" class="junction_gene"><i>kgtP/&#8211;</i></td>
+<td class="junction_gene">alpha&#8209;ketoglutarate permease/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_638.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_638.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_28</td>
+<td align="center" class="junction_gene">32711&nbsp;=</td><td align="center" class="junction_gene">1361 (1.660)</td><td rowspan="2" align="center">609 (0.780)<br>+AAGGCC</td>
+<td rowspan="2" align="center">185/286</td>
+<td rowspan="2" align="center">2.6</td>
+<td rowspan="2" align="center">48.2%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;41/+14)</td>
+<td align="center" class="junction_gene"><i>trnD/rrf</i></td>
+<td class="junction_gene">tRNA&#8209;Asp(gtc)/5S ribosomal RNA</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_638.html">?</a></td><td rowspan="1" class="junction_gene">contig_5</td>
+<td align="center" class="junction_gene">=&nbsp;258257</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(+97/&#8211;)</td>
+<td align="center" class="junction_gene"><i>yjaB/&#8211;</i></td>
+<td class="junction_gene">acetyltransferase/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_640.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_640.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_28</td>
+<td align="center" class="junction_gene">=&nbsp;32829</td><td align="center" class="junction_gene">20 (0.020)</td><td rowspan="2" align="center">3710 (1.080)<br>+A</td>
+<td rowspan="2" align="center">290/296</td>
+<td rowspan="2" align="center">-0.0</td>
+<td rowspan="2" align="center">99.7%</td>
+<td align="center" class="junction_gene">pseudogene&nbsp;(2/106&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>rrf</i></td>
+<td class="junction_gene">5S ribosomal RNA</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_640.html">?</a></td><td rowspan="1" class="junction_gene">contig_36</td>
+<td align="center" class="junction_gene">=&nbsp;3028</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(+104/&#8211;)</td>
+<td align="center" class="junction_gene"><i>rrl/&#8211;</i></td>
+<td class="junction_gene">23S ribosomal RNA/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_641.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_641.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_29</td>
+<td align="center" class="junction_gene">1&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">650 (0.260)<br>+35 bp</td>
+<td rowspan="2" align="center">180/228</td>
+<td rowspan="2" align="center">0.2</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8209;433)</td>
+<td align="center" class="junction_gene"><i>&#8211;/purH</i></td>
+<td class="junction_gene">&#8211;/bifunctional phosphoribosylaminoimidazolecarboxamide formyltransferase/IMP cyclohydrolase</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_641.html">?</a></td><td rowspan="1" class="junction_gene">contig_42</td>
+<td align="center" class="junction_gene">1&nbsp;=</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8209;146)</td>
+<td align="center" class="junction_gene"><i>&#8211;/rrs</i></td>
+<td class="junction_gene">&#8211;/16S ribosomal RNA</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_643.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_643.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_29</td>
+<td align="center" class="junction_gene">=&nbsp;30834</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">715 (0.560)</td>
+<td rowspan="2" align="center">225/298</td>
+<td rowspan="2" align="center">0.4</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;248/&#8211;)</td>
+<td align="center" class="junction_gene"><i>secE/&#8211;</i></td>
+<td class="junction_gene">preprotein translocase subunit SecE/&#8211;</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_643.html">?</a></td><td rowspan="1" class="junction_gene">contig_51</td>
+<td align="center" class="junction_gene">=&nbsp;956</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8211;)</td>
+<td align="center" class="junction_gene"><i>&#8211;/&#8211;</i></td>
+<td class="junction_gene">&#8211;/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_644.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_644.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_3</td>
+<td align="center" class="junction_gene">2&nbsp;=</td><td align="center" class="junction_gene">11 (0.020)</td><td rowspan="2" align="center">12289 (1.710)<br>+C</td>
+<td rowspan="2" align="center">288/296</td>
+<td rowspan="2" align="center">-0.0</td>
+<td rowspan="2" align="center">100.0%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/+266)</td>
+<td align="center" class="junction_gene"><i>&#8211;/katE</i></td>
+<td class="junction_gene">&#8211;/catalase HPII</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_644.html">?</a></td><td rowspan="1" class="junction_gene">contig_48</td>
+<td align="center" class="junction_gene">=&nbsp;1090</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8211;)</td>
+<td align="center" class="junction_gene"><i>&#8211;/&#8211;</i></td>
+<td class="junction_gene">&#8211;/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_661.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_661.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_3</td>
+<td align="center" class="junction_gene">=&nbsp;279010</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">622 (0.600)</td>
+<td rowspan="2" align="center">216/298</td>
+<td rowspan="2" align="center">0.1</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+604/&#8211;)</td>
+<td align="center" class="junction_gene"><i>pqqL/&#8211;</i></td>
+<td class="junction_gene">putative zinc protease PqqL/&#8211;</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_661.html">?</a></td><td rowspan="1" class="junction_gene">contig_47</td>
+<td align="center" class="junction_gene">=&nbsp;1151</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(+573/&#8211;)</td>
+<td align="center" class="junction_gene"><i>DBOGNM_04637/&#8211;</i></td>
+<td class="junction_gene">hypothetical protein/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_662.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_662.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_30</td>
+<td align="center" class="junction_gene">1&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">772 (0.600)</td>
+<td rowspan="2" align="center">220/298</td>
+<td rowspan="2" align="center">0.8</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8209;201)</td>
+<td align="center" class="junction_gene"><i>&#8211;/bfd</i></td>
+<td class="junction_gene">&#8211;/bacterioferritin&#8209;associated ferredoxin</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_662.html">?</a></td><td rowspan="1" class="junction_gene">contig_51</td>
+<td align="center" class="junction_gene">=&nbsp;956</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8211;)</td>
+<td align="center" class="junction_gene"><i>&#8211;/&#8211;</i></td>
+<td class="junction_gene">&#8211;/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_663.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_663.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_30</td>
+<td align="center" class="junction_gene">=&nbsp;26140</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">730 (0.230)<br>+GCGTCGCA</td>
+<td rowspan="2" align="center">222/282</td>
+<td rowspan="2" align="center">0.2</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;318/&#8211;)</td>
+<td align="center" class="junction_gene"><i>yrdA/&#8211;</i></td>
+<td class="junction_gene">Protein YrdA/&#8211;</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_663.html">?</a></td><td rowspan="1" class="junction_gene">contig_42</td>
+<td align="center" class="junction_gene">1&nbsp;=</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8209;146)</td>
+<td align="center" class="junction_gene"><i>&#8211;/rrs</i></td>
+<td class="junction_gene">&#8211;/16S ribosomal RNA</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_664.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_664.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_31</td>
+<td align="center" class="junction_gene">2&nbsp;=</td><td align="center" class="junction_gene">27 (0.040)</td><td rowspan="2" align="center">667 (0.510)<br>+C</td>
+<td rowspan="2" align="center">180/296</td>
+<td rowspan="2" align="center">2.1</td>
+<td rowspan="2" align="center">98.0%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/+325)</td>
+<td align="center" class="junction_gene"><i>&#8211;/ydcO</i></td>
+<td class="junction_gene">&#8211;/BenE family transporter YdcO</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_664.html">?</a></td><td rowspan="1" class="junction_gene">contig_52</td>
+<td align="center" class="junction_gene">1&nbsp;=</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8211;)</td>
+<td align="center" class="junction_gene"><i>&#8211;/&#8211;</i></td>
+<td class="junction_gene">&#8211;/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_665.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_665.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_31</td>
+<td align="center" class="junction_gene">=&nbsp;25073</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">686 (0.720)</td>
+<td rowspan="2" align="center">226/298</td>
+<td rowspan="2" align="center">0.0</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+1195/&#8211;)</td>
+<td align="center" class="junction_gene"><i>yncH/&#8211;</i></td>
+<td class="junction_gene">YncH family protein/&#8211;</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_665.html">?</a></td><td rowspan="1" class="junction_gene">contig_63</td>
+<td align="center" class="junction_gene">=&nbsp;337</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8211;)</td>
+<td align="center" class="junction_gene"><i>&#8211;/&#8211;</i></td>
+<td class="junction_gene">&#8211;/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_667.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_667.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_33</td>
+<td align="center" class="junction_gene">=&nbsp;7501</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">624 (0.250)<br>+35 bp</td>
+<td rowspan="2" align="center">173/228</td>
+<td rowspan="2" align="center">0.2</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+182/&#8211;)</td>
+<td align="center" class="junction_gene"><i>gmhB/&#8211;</i></td>
+<td class="junction_gene">D&#8209;glycero&#8209;beta&#8209;D&#8209;manno&#8209;heptose 1,7&#8209;bisphosphate 7&#8209;phosphatase/&#8211;</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_667.html">?</a></td><td rowspan="1" class="junction_gene">contig_42</td>
+<td align="center" class="junction_gene">1&nbsp;=</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8209;146)</td>
+<td align="center" class="junction_gene"><i>&#8211;/rrs</i></td>
+<td class="junction_gene">&#8211;/16S ribosomal RNA</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_668.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_668.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_34</td>
+<td align="center" class="junction_gene">=&nbsp;4392</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">909 (0.710)</td>
+<td rowspan="2" align="center">232/298</td>
+<td rowspan="2" align="center">0.2</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+324/&#8211;)</td>
+<td align="center" class="junction_gene"><i>trnT/&#8211;</i></td>
+<td class="junction_gene">tRNA&#8209;Thr(ggt)/&#8211;</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_668.html">?</a></td><td rowspan="1" class="junction_gene">contig_51</td>
+<td align="center" class="junction_gene">1&nbsp;=</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8211;)</td>
+<td align="center" class="junction_gene"><i>&#8211;/&#8211;</i></td>
+<td class="junction_gene">&#8211;/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_675.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_675.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_35</td>
+<td align="center" class="junction_gene">=&nbsp;3355</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">885 (0.730)</td>
+<td rowspan="2" align="center">243/298</td>
+<td rowspan="2" align="center">0.0</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;431/&#8211;)</td>
+<td align="center" class="junction_gene"><i>DBOGNM_04619/&#8211;</i></td>
+<td class="junction_gene">RHS element core protein/&#8211;</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_675.html">?</a></td><td rowspan="1" class="junction_gene">contig_50</td>
+<td align="center" class="junction_gene">1&nbsp;=</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8211;)</td>
+<td align="center" class="junction_gene"><i>&#8211;/&#8211;</i></td>
+<td class="junction_gene">&#8211;/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_676.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_676.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_36</td>
+<td align="center" class="junction_gene">1&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">1270 (0.350)<br>+TTGCGATTCATCATCGT</td>
+<td rowspan="2" align="center">191/264</td>
+<td rowspan="2" align="center">0.0</td>
+<td rowspan="2" align="center">98.8%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8209;20)</td>
+<td align="center" class="junction_gene"><i>&#8211;/rrl</i></td>
+<td class="junction_gene">&#8211;/23S ribosomal RNA</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_676.html">?</a></td><td rowspan="1" class="junction_gene">contig_60</td>
+<td align="center" class="junction_gene">=&nbsp;383</td>
+<td align="center" class="junction_gene">36 (0.020)</td><td align="center" class="junction_gene">pseudogene&nbsp;(79/92&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>StyR&#8209;44</i></td>
+<td class="junction_gene">Salmonella enterica Typhi npcRNA 44</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_677.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_677.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_36</td>
+<td align="center" class="junction_gene">1&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">2469 (0.690)<br>+TTTCGATTCATCATCGT</td>
+<td rowspan="2" align="center">205/264</td>
+<td rowspan="2" align="center">0.0</td>
+<td rowspan="2" align="center">99.4%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8209;20)</td>
+<td align="center" class="junction_gene"><i>&#8211;/rrl</i></td>
+<td class="junction_gene">&#8211;/23S ribosomal RNA</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_677.html">?</a></td><td rowspan="1" class="junction_gene">contig_60</td>
+<td align="center" class="junction_gene">=&nbsp;383</td>
+<td align="center" class="junction_gene">36 (0.020)</td><td align="center" class="junction_gene">pseudogene&nbsp;(79/92&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>StyR&#8209;44</i></td>
+<td class="junction_gene">Salmonella enterica Typhi npcRNA 44</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_678.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_678.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_36</td>
+<td align="center" class="junction_gene">1&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">862 (0.220)</td>
+<td rowspan="2" align="center">232/292</td>
+<td rowspan="2" align="center">0.0</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8209;20)</td>
+<td align="center" class="junction_gene"><i>&#8211;/rrl</i></td>
+<td class="junction_gene">&#8211;/23S ribosomal RNA</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_678.html">?</a></td><td rowspan="1" class="junction_gene">contig_60</td>
+<td align="center" class="junction_gene">=&nbsp;391</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">pseudogene&nbsp;(87/92&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>StyR&#8209;44</i></td>
+<td class="junction_gene">Salmonella enterica Typhi npcRNA 44</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_679.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_679.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_37</td>
+<td align="center" class="junction_gene">1&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">683 (0.580)</td>
+<td rowspan="2" align="center">207/298</td>
+<td rowspan="2" align="center">0.3</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8209;124)</td>
+<td align="center" class="junction_gene"><i>&#8211;/DBOGNM_04621</i></td>
+<td class="junction_gene">&#8211;/RHS repeat protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_679.html">?</a></td><td rowspan="1" class="junction_gene">contig_50</td>
+<td align="center" class="junction_gene">1&nbsp;=</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8211;)</td>
+<td align="center" class="junction_gene"><i>&#8211;/&#8211;</i></td>
+<td class="junction_gene">&#8211;/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_680.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_680.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_37</td>
+<td align="center" class="junction_gene">215&nbsp;=</td><td align="center" class="junction_gene">827 (1.130)</td><td rowspan="2" align="center">855 (1.170)<br>+55 bp</td>
+<td rowspan="2" align="center">153/188</td>
+<td rowspan="2" align="center">0.0</td>
+<td rowspan="2" align="center">76.6%</td>
+<td align="center" class="junction_gene">coding&nbsp;(91/2103&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>DBOGNM_04621</i></td>
+<td class="junction_gene">RHS repeat protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_680.html">?</a></td><td rowspan="1" class="junction_gene">contig_45</td>
+<td align="center" class="junction_gene">=&nbsp;1345</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;128/&#8211;)</td>
+<td align="center" class="junction_gene"><i>DBOGNM_04635/&#8211;</i></td>
+<td class="junction_gene">hypothetical protein/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_685.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_685.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_38</td>
+<td align="center" class="junction_gene">1&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">626 (0.530)</td>
+<td rowspan="2" align="center">203/298</td>
+<td rowspan="2" align="center">0.3</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/+1354)</td>
+<td align="center" class="junction_gene"><i>&#8211;/DBOGNM_04623</i></td>
+<td class="junction_gene">&#8211;/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_685.html">?</a></td><td rowspan="1" class="junction_gene">contig_50</td>
+<td align="center" class="junction_gene">=&nbsp;1004</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8211;)</td>
+<td align="center" class="junction_gene"><i>&#8211;/&#8211;</i></td>
+<td class="junction_gene">&#8211;/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_686.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_686.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_38</td>
+<td align="center" class="junction_gene">=&nbsp;891</td><td align="center" class="junction_gene">612 (0.820)</td><td rowspan="2" align="center">882 (1.550)<br>+39 bp</td>
+<td rowspan="2" align="center">142/220</td>
+<td rowspan="2" align="center">0.4</td>
+<td rowspan="2" align="center">79.6%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/+464)</td>
+<td align="center" class="junction_gene"><i>&#8211;/DBOGNM_04623</i></td>
+<td class="junction_gene">&#8211;/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_686.html">?</a></td><td rowspan="1" class="junction_gene">contig_4</td>
+<td align="center" class="junction_gene">1&nbsp;=</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/+525)</td>
+<td align="center" class="junction_gene"><i>&#8211;/ybbP</i></td>
+<td class="junction_gene">&#8211;/putative ABC transporter permease subunit YbbP</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_689.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_689.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_39</td>
+<td align="center" class="junction_gene">1&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">903 (1.060)<br>+ATACAGG</td>
+<td rowspan="2" align="center">208/284</td>
+<td rowspan="2" align="center">0.6</td>
+<td rowspan="2" align="center">61.3%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8209;48)</td>
+<td align="center" class="junction_gene"><i>&#8211;/rhsA</i></td>
+<td class="junction_gene">&#8211;/RHS element core protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_689.html">?</a></td><td rowspan="1" class="junction_gene">contig_8</td>
+<td align="center" class="junction_gene">200684&nbsp;=</td>
+<td align="center" class="junction_gene">1199 (1.380)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;553/&#8211;)</td>
+<td align="center" class="junction_gene"><i>yibG/&#8211;</i></td>
+<td class="junction_gene">Uncharacterized protein YibG/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_693.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_693.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_40</td>
+<td align="center" class="junction_gene">1&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">762 (0.710)</td>
+<td rowspan="2" align="center">219/298</td>
+<td rowspan="2" align="center">0.0</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8209;115)</td>
+<td align="center" class="junction_gene"><i>&#8211;/DBOGNM_04628</i></td>
+<td class="junction_gene">&#8211;/type IV secretion protein Rhs</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_693.html">?</a></td><td rowspan="1" class="junction_gene">contig_46</td>
+<td align="center" class="junction_gene">1&nbsp;=</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8209;29)</td>
+<td align="center" class="junction_gene"><i>&#8211;/DBOGNM_04636</i></td>
+<td class="junction_gene">&#8211;/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_694.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_694.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_41</td>
+<td align="center" class="junction_gene">1&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">761 (0.630)</td>
+<td rowspan="2" align="center">233/298</td>
+<td rowspan="2" align="center">0.0</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/+1113)</td>
+<td align="center" class="junction_gene"><i>&#8211;/DBOGNM_04630</i></td>
+<td class="junction_gene">&#8211;/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_694.html">?</a></td><td rowspan="1" class="junction_gene">contig_50</td>
+<td align="center" class="junction_gene">=&nbsp;1004</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8211;)</td>
+<td align="center" class="junction_gene"><i>&#8211;/&#8211;</i></td>
+<td class="junction_gene">&#8211;/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_695.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_695.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_42</td>
+<td align="center" class="junction_gene">=&nbsp;1702</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">1617 (0.430)<br>+TCTTTG</td>
+<td rowspan="2" align="center">244/286</td>
+<td rowspan="2" align="center">0.0</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+14/&#8211;)</td>
+<td align="center" class="junction_gene"><i>rrs/&#8211;</i></td>
+<td class="junction_gene">16S ribosomal RNA/&#8211;</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_695.html">?</a></td><td rowspan="1" class="junction_gene">contig_60</td>
+<td align="center" class="junction_gene">1&nbsp;=</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8209;151)</td>
+<td align="center" class="junction_gene"><i>&#8211;/trnE</i></td>
+<td class="junction_gene">&#8211;/tRNA&#8209;Glu(ttc)</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_696.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_696.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_42</td>
+<td align="center" class="junction_gene">=&nbsp;1702</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">1955 (0.490)</td>
+<td rowspan="2" align="center">283/298</td>
+<td rowspan="2" align="center">0.0</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+14/&#8211;)</td>
+<td align="center" class="junction_gene"><i>rrs/&#8211;</i></td>
+<td class="junction_gene">16S ribosomal RNA/&#8211;</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_696.html">?</a></td><td rowspan="1" class="junction_gene">contig_64</td>
+<td align="center" class="junction_gene">1&nbsp;=</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8209;54)</td>
+<td align="center" class="junction_gene"><i>&#8211;/trnI</i></td>
+<td class="junction_gene">&#8211;/tRNA&#8209;Ile(gat)</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_698.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_698.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_43</td>
+<td align="center" class="junction_gene">=&nbsp;1622</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">697 (0.810)</td>
+<td rowspan="2" align="center">205/298</td>
+<td rowspan="2" align="center">0.1</td>
+<td rowspan="2" align="center">58.3%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;491/&#8211;)</td>
+<td align="center" class="junction_gene"><i>ybfC/&#8211;</i></td>
+<td class="junction_gene">Uncharacterized protein YbfC/&#8211;</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_698.html">?</a></td><td rowspan="1" class="junction_gene">contig_8</td>
+<td align="center" class="junction_gene">200668&nbsp;=</td>
+<td align="center" class="junction_gene">996 (1.150)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;537/&#8211;)</td>
+<td align="center" class="junction_gene"><i>yibG/&#8211;</i></td>
+<td class="junction_gene">Uncharacterized protein YibG/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_700.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_700.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_44</td>
+<td align="center" class="junction_gene">1&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">1511 (0.760)</td>
+<td rowspan="2" align="center">283/298</td>
+<td rowspan="2" align="center">0.0</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/+261)</td>
+<td align="center" class="junction_gene"><i>&#8211;/DBOGNM_04634</i></td>
+<td class="junction_gene">&#8211;/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_700.html">?</a></td><td rowspan="1" class="junction_gene">contig_62</td>
+<td align="center" class="junction_gene">1&nbsp;=</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8211;)</td>
+<td align="center" class="junction_gene"><i>&#8211;/&#8211;</i></td>
+<td class="junction_gene">&#8211;/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_703.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_703.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_44</td>
+<td align="center" class="junction_gene">=&nbsp;1395</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">897 (0.320)</td>
+<td rowspan="2" align="center">230/298</td>
+<td rowspan="2" align="center">2.0</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;567/&#8211;)</td>
+<td align="center" class="junction_gene"><i>DBOGNM_04634/&#8211;</i></td>
+<td class="junction_gene">hypothetical protein/&#8211;</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_703.html">?</a></td><td rowspan="1" class="junction_gene">contig_57</td>
+<td align="center" class="junction_gene">1&nbsp;=</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8211;)</td>
+<td align="center" class="junction_gene"><i>&#8211;/&#8211;</i></td>
+<td class="junction_gene">&#8211;/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_704.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_704.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_45</td>
+<td align="center" class="junction_gene">1&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">764 (0.680)</td>
+<td rowspan="2" align="center">228/298</td>
+<td rowspan="2" align="center">0.0</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/+923)</td>
+<td align="center" class="junction_gene"><i>&#8211;/DBOGNM_04635</i></td>
+<td class="junction_gene">&#8211;/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_704.html">?</a></td><td rowspan="1" class="junction_gene">contig_55</td>
+<td align="center" class="junction_gene">=&nbsp;590</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8211;)</td>
+<td align="center" class="junction_gene"><i>&#8211;/&#8211;</i></td>
+<td class="junction_gene">&#8211;/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_705.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_705.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_45</td>
+<td align="center" class="junction_gene">1&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">707 (0.640)</td>
+<td rowspan="2" align="center">223/298</td>
+<td rowspan="2" align="center">2.5</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/+923)</td>
+<td align="center" class="junction_gene"><i>&#8211;/DBOGNM_04635</i></td>
+<td class="junction_gene">&#8211;/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_705.html">?</a></td><td rowspan="1" class="junction_gene">contig_56</td>
+<td align="center" class="junction_gene">=&nbsp;581</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8211;)</td>
+<td align="center" class="junction_gene"><i>&#8211;/&#8211;</i></td>
+<td class="junction_gene">&#8211;/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_711.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_711.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_47</td>
+<td align="center" class="junction_gene">1&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">724 (0.650)</td>
+<td rowspan="2" align="center">220/298</td>
+<td rowspan="2" align="center">0.5</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8209;41)</td>
+<td align="center" class="junction_gene"><i>&#8211;/DBOGNM_04637</i></td>
+<td class="junction_gene">&#8211;/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_711.html">?</a></td><td rowspan="1" class="junction_gene">contig_9</td>
+<td align="center" class="junction_gene">=&nbsp;187087</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;376/&#8211;)</td>
+<td align="center" class="junction_gene"><i>gadX/&#8211;</i></td>
+<td class="junction_gene">acid resistance transcriptional activator GadX/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_715.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_715.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_48</td>
+<td align="center" class="junction_gene">1&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">404 (0.090)<br>+55 bp</td>
+<td rowspan="2" align="center">140/188</td>
+<td rowspan="2" align="center">0.4</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8211;)</td>
+<td align="center" class="junction_gene"><i>&#8211;/&#8211;</i></td>
+<td class="junction_gene">&#8211;/&#8211;</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_715.html">?</a></td><td rowspan="1" class="junction_gene">contig_6</td>
+<td align="center" class="junction_gene">=&nbsp;243983</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(+92/&#8211;)</td>
+<td align="center" class="junction_gene"><i>hycI/&#8211;</i></td>
+<td class="junction_gene">hydrogenase maturation peptidase HycI/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_716.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_716.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_48</td>
+<td align="center" class="junction_gene">1&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">429 (0.100)<br>+63 bp</td>
+<td rowspan="2" align="center">133/172</td>
+<td rowspan="2" align="center">0.1</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8211;)</td>
+<td align="center" class="junction_gene"><i>&#8211;/&#8211;</i></td>
+<td class="junction_gene">&#8211;/&#8211;</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_716.html">?</a></td><td rowspan="1" class="junction_gene">contig_7</td>
+<td align="center" class="junction_gene">=&nbsp;209663</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(+44/&#8211;)</td>
+<td align="center" class="junction_gene"><i>nlpE/&#8211;</i></td>
+<td class="junction_gene">envelope stress response activation lipoprotein NlpE/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_719.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_719.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_49</td>
+<td align="center" class="junction_gene">1&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">664 (0.870)</td>
+<td rowspan="2" align="center">201/280</td>
+<td rowspan="2" align="center">0.5</td>
+<td rowspan="2" align="center">60.3%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8209;488)</td>
+<td align="center" class="junction_gene"><i>&#8211;/ybfB</i></td>
+<td class="junction_gene">&#8211;/Uncharacterized protein YbfB</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_719.html">?</a></td><td rowspan="1" class="junction_gene">contig_8</td>
+<td align="center" class="junction_gene">200668&nbsp;=</td>
+<td align="center" class="junction_gene">873 (1.070)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;537/&#8211;)</td>
+<td align="center" class="junction_gene"><i>yibG/&#8211;</i></td>
+<td class="junction_gene">Uncharacterized protein YibG/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_720.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_720.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_49</td>
+<td align="center" class="junction_gene">=&nbsp;1040</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">2441 (1.280)</td>
+<td rowspan="2" align="center">286/298</td>
+<td rowspan="2" align="center">0.0</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+225/&#8211;)</td>
+<td align="center" class="junction_gene"><i>ybfB/&#8211;</i></td>
+<td class="junction_gene">Uncharacterized protein YbfB/&#8211;</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_720.html">?</a></td><td rowspan="1" class="junction_gene">contig_57</td>
+<td align="center" class="junction_gene">1&nbsp;=</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8211;)</td>
+<td align="center" class="junction_gene"><i>&#8211;/&#8211;</i></td>
+<td class="junction_gene">&#8211;/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_727.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_727.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_51</td>
+<td align="center" class="junction_gene">1&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">842 (0.670)</td>
+<td rowspan="2" align="center">248/298</td>
+<td rowspan="2" align="center">0.0</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8211;)</td>
+<td align="center" class="junction_gene"><i>&#8211;/&#8211;</i></td>
+<td class="junction_gene">&#8211;/&#8211;</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_727.html">?</a></td><td rowspan="1" class="junction_gene">contig_9</td>
+<td align="center" class="junction_gene">1&nbsp;=</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/+280)</td>
+<td align="center" class="junction_gene"><i>&#8211;/fusA</i></td>
+<td class="junction_gene">&#8211;/elongation factor G</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_729.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_729.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_53</td>
+<td align="center" class="junction_gene">1&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">1487 (0.930)</td>
+<td rowspan="2" align="center">246/264</td>
+<td rowspan="2" align="center">0.0</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8211;)</td>
+<td align="center" class="junction_gene"><i>&#8211;/&#8211;</i></td>
+<td class="junction_gene">&#8211;/&#8211;</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_729.html">?</a></td><td rowspan="1" class="junction_gene">contig_62</td>
+<td align="center" class="junction_gene">=&nbsp;367</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8211;)</td>
+<td align="center" class="junction_gene"><i>&#8211;/&#8211;</i></td>
+<td class="junction_gene">&#8211;/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_747.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_747.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_60</td>
+<td align="center" class="junction_gene">299&nbsp;=</td><td align="center" class="junction_gene">1769 (0.890)</td><td rowspan="2" align="center">1651 (0.790)</td>
+<td rowspan="2" align="center">177/298</td>
+<td rowspan="2" align="center">0.1</td>
+<td rowspan="2" align="center">65.1%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+72/&#8209;6)</td>
+<td align="center" class="junction_gene"><i>trnE/StyR&#8209;44</i></td>
+<td class="junction_gene">tRNA&#8209;Glu(ttc)/Salmonella enterica Typhi npcRNA 44</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_747.html">?</a></td><td rowspan="1" class="junction_gene">contig_64</td>
+<td align="center" class="junction_gene">=&nbsp;310</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(+61/&#8211;)</td>
+<td align="center" class="junction_gene"><i>trnA/&#8211;</i></td>
+<td class="junction_gene">tRNA&#8209;Ala(tgc)/&#8211;</td>
+</tr>
+</table>
+</body></html>

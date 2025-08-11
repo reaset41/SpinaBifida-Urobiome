@@ -1,0 +1,15 @@
+﻿type,snp_type,mutation_category,locus_tag
+SNP,nonsynonymous,snp_nonsynonymous,GPCFHD_00120
+SNP,nonsynonymous,snp_nonsynonymous,GPCFHD_00225
+SNP,nonsynonymous,snp_nonsynonymous,GPCFHD_00438
+SNP,nonsynonymous,snp_nonsynonymous,GPCFHD_00480
+SNP,nonsynonymous,snp_nonsynonymous,GPCFHD_00686
+SNP,nonsynonymous,snp_nonsynonymous,GPCFHD_00723
+DEL,NA,small_indel,GPCFHD_04180
+SNP,nonsynonymous,snp_nonsynonymous,GPCFHD_00972
+SNP,nonsynonymous,snp_nonsynonymous,GPCFHD_04824
+SNP,nonsynonymous,snp_nonsynonymous,GPCFHD_04824
+SNP,nonsynonymous,snp_nonsynonymous,GPCFHD_04824
+INS,NA,small_indel,GPCFHD_04910
+SNP,nonsynonymous,snp_nonsynonymous,GPCFHD_02025
+SNP,nonsynonymous,snp_nonsynonymous,GPCFHD_05123

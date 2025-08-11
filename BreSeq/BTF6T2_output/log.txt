@@ -1,4 +1,0 @@
-Sun Dec  8 10:37:22 2024
-
-breseq -r BTF6T1.gbff -o ./breseq/BTF6T2 ./trimmed_reads/BTF6T2_R1-trimmed.fastq.gz ./trimmed_reads/BTF6T2_R2-trimmed.fastq.gz
-

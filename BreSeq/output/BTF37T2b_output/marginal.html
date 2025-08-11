@@ -1,0 +1,395 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html>
+<head>
+<title>BRESEQ :: Marginal Predictions</title>
+<style type = "text/css">
+body {font-family: sans-serif; font-size: 11pt;}
+th {background-color: rgb(0,0,0); color: rgb(255,255,255);}
+table {background-color: rgb(1,0,0); color: rgb(0,0,0);}
+tr {background-color: rgb(255,255,255);}
+.mutation_in_codon {color:red; text-decoration : underline;}
+.snp_type_synonymous{color:green;}
+.snp_type_nonsynonymous{color:blue;}
+.snp_type_nonsense{color:red;}
+.mutation_header_row {background-color: rgb(0,130,0);}
+.read_alignment_header_row {background-color: rgb(255,0,0);}
+.missing_coverage_header_row {background-color: rgb(0,100,100);}
+.new_junction_header_row {background-color: rgb(0,0,155);}
+.copy_number_header_row {background-color: rgb(153,102,0);}
+.alternate_table_row_0 {background-color: rgb(255,255,255);}
+.alternate_table_row_1 {background-color: rgb(235,235,235);}
+.gray_table_row {background-color: rgb(230,230,245);}
+.polymorphism_table_row {background-color: rgb(160,255,160);}
+.highlight_table_row {background-color: rgb(192,255,255);}
+.reject_table_row {background-color: rgb(255,200,165);}
+.user_defined_table_row {background-color: rgb(255,255,0);}
+.information_table_row {background-color: rgb(200,255,255);}
+.junction_repeat {background-color: rgb(255,165,0)}
+.junction_gene {}
+.hidden { display: none; }
+.unhidden { display: block; }
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+  function hideTog(divID) {
+    var item = document.getElementById(divID);
+    if (item) {
+      item.className=(item.className=='hidden')?'unhidden':'hidden';
+    }
+  }
+  function showTog(butID) {
+    var button = document.getElementById(butID);
+    if (button) {
+      button.value=(button.value=='Show')?'Hide':'Show';
+    }
+  }
+</script>
+
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+<tr>
+<td><a href="http://barricklab.org/breseq"><img src="evidence/breseq_small.png" /></a></td>
+<td width="100%">
+<b><i>breseq</i></b>&nbsp;&nbsp;version 0.38.2&nbsp;&nbsp;
+<br><a href="index.html">mutation predictions</a> | 
+<a href="marginal.html">marginal predictions</a> | 
+<a href="summary.html">summary statistics</a> | 
+<a href="output.gd">genome diff</a> | 
+<a href="log.txt">command line log</a>
+</td></tr></table>
+
+<p>
+<p>
+<table border="0" cellspacing="1", cellpadding="3">
+<tr><th colspan="12" align="left" class="read_alignment_header_row">Marginal read alignment evidence (highest frequency 20 of 271 shown, sorted by frequency from high to low)</th></tr>
+<tr>
+<th>&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th colspan="2">position</th>
+<th>ref</th>
+<th>new</th>
+<th>freq</th>
+<th>score&nbsp;(cons/poly)</th>
+<th>reads</th>
+<th>annotation</th>
+<th>genes</th>
+<th width="100%">product</th>
+</tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_230.html">*</a></td><td align="center">contig_5</td><td align="right">62,971</td><td align="right">0</td><td align="center">C</td><td align="center">G</td><td align="right">71.3%
+</td><td align="center">5532.4
+/&nbsp;inf
+</td><td align="center">2659</td><td align="center">intergenic&nbsp;(+283/&#8209;255)</td><td align="center"><i>CKPBAK_01702/perM</i></td><td align="left">Bacterial group 4 Ig&#8209;like protein/AI&#8209;2E family transporter</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_25.html">*</a></td><td align="center">contig_15</td><td align="right">248</td><td align="right">0</td><td align="center">T</td><td align="center">C</td><td align="right">67.8%
+</td><td align="center">3296.6
+/&nbsp;inf
+</td><td align="center">2461</td><td align="center">intergenic&nbsp;(&#8211;/+251)</td><td align="center"><i>&#8211;/CKPBAK_02743</i></td><td align="left">&#8211;/NUDIX hydrolase</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_22.html">*</a></td><td align="center">contig_15</td><td align="right">158</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">65.8%
+</td><td align="center">2764.6
+/&nbsp;inf
+</td><td align="center">2343</td><td align="center">intergenic&nbsp;(&#8211;/+341)</td><td align="center"><i>&#8211;/CKPBAK_02743</i></td><td align="left">&#8211;/NUDIX hydrolase</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_21.html">*</a></td><td align="center">contig_15</td><td align="right">77</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">65.5%
+</td><td align="center">2662.5
+/&nbsp;inf
+</td><td align="center">2377</td><td align="center">intergenic&nbsp;(&#8211;/+422)</td><td align="center"><i>&#8211;/CKPBAK_02743</i></td><td align="left">&#8211;/NUDIX hydrolase</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_24.html">*</a></td><td align="center">contig_15</td><td align="right">173</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">65.3%
+</td><td align="center">2961.2
+/&nbsp;inf
+</td><td align="center">2379</td><td align="center">intergenic&nbsp;(&#8211;/+326)</td><td align="center"><i>&#8211;/CKPBAK_02743</i></td><td align="left">&#8211;/NUDIX hydrolase</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_20.html">*</a></td><td align="center">contig_15</td><td align="right">53</td><td align="right">1</td><td align="center">.</td><td align="center">T</td><td align="right">62.6%
+</td><td align="center">inf
+/&nbsp;inf
+</td><td align="center">2254</td><td align="center">intergenic&nbsp;(&#8211;/+446)</td><td align="center"><i>&#8211;/CKPBAK_02743</i></td><td align="left">&#8211;/NUDIX hydrolase</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_183.html">*</a></td><td align="center">contig_27</td><td align="right">4,585</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">61.0%
+</td><td align="center">8601.4
+/&nbsp;inf
+</td><td align="center">10265</td><td align="center">noncoding&nbsp;(2529/2913&nbsp;nt)</td><td align="center"><i>rrl</i></td><td align="left">23S ribosomal RNA</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_182.html">*</a></td><td align="center">contig_27</td><td align="right">4,582</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">61.0%
+</td><td align="center">8572.3
+/&nbsp;inf
+</td><td align="center">10265</td><td align="center">noncoding&nbsp;(2526/2913&nbsp;nt)</td><td align="center"><i>rrl</i></td><td align="left">23S ribosomal RNA</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_184.html">*</a></td><td align="center">contig_27</td><td align="right">4,599</td><td align="right">0</td><td align="center">T</td><td align="center">A</td><td align="right">60.1%
+</td><td align="center">11479.4
+/&nbsp;inf
+</td><td align="center">10571</td><td align="center">noncoding&nbsp;(2543/2913&nbsp;nt)</td><td align="center"><i>rrl</i></td><td align="left">23S ribosomal RNA</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_185.html">*</a></td><td align="center">contig_27</td><td align="right">4,603</td><td align="right">0</td><td align="center">C</td><td align="center">A</td><td align="right">59.5%
+</td><td align="center">11360.3
+/&nbsp;inf
+</td><td align="center">10263</td><td align="center">noncoding&nbsp;(2547/2913&nbsp;nt)</td><td align="center"><i>rrl</i></td><td align="left">23S ribosomal RNA</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_178.html">*</a></td><td align="center">contig_27</td><td align="right">4,546</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">58.9%
+</td><td align="center">9276.5
+/&nbsp;inf
+</td><td align="center">9856</td><td align="center">noncoding&nbsp;(2490/2913&nbsp;nt)</td><td align="center"><i>rrl</i></td><td align="left">23S ribosomal RNA</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_177.html">*</a></td><td align="center">contig_27</td><td align="right">4,543</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">58.6%
+</td><td align="center">9545.5
+/&nbsp;inf
+</td><td align="center">9905</td><td align="center">noncoding&nbsp;(2487/2913&nbsp;nt)</td><td align="center"><i>rrl</i></td><td align="left">23S ribosomal RNA</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_179.html">*</a></td><td align="center">contig_27</td><td align="right">4,555</td><td align="right">0</td><td align="center">G</td><td align="center">C</td><td align="right">58.4%
+</td><td align="center">11550.8
+/&nbsp;inf
+</td><td align="center">9861</td><td align="center">noncoding&nbsp;(2499/2913&nbsp;nt)</td><td align="center"><i>rrl</i></td><td align="left">23S ribosomal RNA</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_180.html">*</a></td><td align="center">contig_27</td><td align="right">4,557</td><td align="right">0</td><td align="center">A</td><td align="center">G</td><td align="right">57.9%
+</td><td align="center">9455.5
+/&nbsp;inf
+</td><td align="center">9974</td><td align="center">noncoding&nbsp;(2501/2913&nbsp;nt)</td><td align="center"><i>rrl</i></td><td align="left">23S ribosomal RNA</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_181.html">*</a></td><td align="center">contig_27</td><td align="right">4,558</td><td align="right">0</td><td align="center">G</td><td align="center">T</td><td align="right">57.7%
+</td><td align="center">12397.6
+/&nbsp;inf
+</td><td align="center">9986</td><td align="center">noncoding&nbsp;(2502/2913&nbsp;nt)</td><td align="center"><i>rrl</i></td><td align="left">23S ribosomal RNA</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_187.html">*</a></td><td align="center">contig_27</td><td align="right">4,617</td><td align="right">0</td><td align="center">G</td><td align="center">T</td><td align="right">56.5%
+</td><td align="center">12476.1
+/&nbsp;inf
+</td><td align="center">9383</td><td align="center">noncoding&nbsp;(2561/2913&nbsp;nt)</td><td align="center"><i>rrl</i></td><td align="left">23S ribosomal RNA</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_272.html">*</a></td><td align="center">contig_6</td><td align="right">104,427</td><td align="right">0</td><td align="center">C</td><td align="center">G</td><td align="right">56.5%
+</td><td align="center">370.0
+/&nbsp;inf
+</td><td align="center">2270</td><td align="center"><font class="snp_type_nonsynonymous">E50Q</font>&nbsp;(<font class="mutation_in_codon">G</font>AA&rarr;<font class="mutation_in_codon">C</font>AA)&nbsp;</td><td align="center"><i>smc</i></td><td align="left">Surface exclusion protein, putative</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_273.html">*</a></td><td align="center">contig_6</td><td align="right">104,432</td><td align="right">0</td><td align="center">G</td><td align="center">C</td><td align="right">56.3%
+</td><td align="center">264.6
+/&nbsp;inf
+</td><td align="center">2200</td><td align="center"><font class="snp_type_nonsynonymous">A48G</font>&nbsp;(G<font class="mutation_in_codon">C</font>T&rarr;G<font class="mutation_in_codon">G</font>T)&nbsp;</td><td align="center"><i>smc</i></td><td align="left">Surface exclusion protein, putative</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_186.html">*</a></td><td align="center">contig_27</td><td align="right">4,616</td><td align="right">0</td><td align="center">T</td><td align="center">A</td><td align="right">55.9%
+</td><td align="center">12728.9
+/&nbsp;inf
+</td><td align="center">9476</td><td align="center">noncoding&nbsp;(2560/2913&nbsp;nt)</td><td align="center"><i>rrl</i></td><td align="left">23S ribosomal RNA</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_176.html">*</a></td><td align="center">contig_27</td><td align="right">4,533</td><td align="right">0</td><td align="center">C</td><td align="center">G</td><td align="right">54.8%
+</td><td align="center">12465.5
+/&nbsp;inf
+</td><td align="center">8921</td><td align="center">noncoding&nbsp;(2477/2913&nbsp;nt)</td><td align="center"><i>rrl</i></td><td align="left">23S ribosomal RNA</td></tr>
+</table>
+
+<p>
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="12" align="left" class="new_junction_header_row">Marginal new junction evidence (lowest skew 10 of 41 shown)</th></tr>
+<!-- Header Lines for New Junction -->
+<tr>
+<th colspan="2">&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th>position</th>
+<th>reads&nbsp;(cov)</th>
+<th>reads&nbsp;(cov)</th>
+<th>score</th>
+<th>skew</th>
+<th>freq</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">product</th>
+</tr>
+
+<!-- Item Lines for New Junction -->
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_379.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_379.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_7</td>
+<td align="center" class="junction_gene">=&nbsp;176496</td><td align="center" class="junction_gene">902 (1.010)</td><td rowspan="2" align="center">64 (0.750)<br>+133 bp</td>
+<td rowspan="2" align="center">15/28</td>
+<td rowspan="2" align="center">3.3</td>
+<td rowspan="2" align="center">42.6%</td>
+<td align="center" class="junction_gene">noncoding&nbsp;(53/74&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>trnfM</i></td>
+<td class="junction_gene">tRNA&#8209;fMet(cat)</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_379.html">?</a></td><td rowspan="1" class="junction_gene">contig_7</td>
+<td align="center" class="junction_gene">176532&nbsp;=</td>
+<td align="center" class="junction_gene">911 (1.020)</td><td align="center" class="junction_gene">noncoding&nbsp;(17/74&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>trnfM</i></td>
+<td class="junction_gene">tRNA&#8209;fMet(cat)</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_375.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_375.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_7</td>
+<td align="center" class="junction_gene">=&nbsp;175931</td><td align="center" class="junction_gene">1075 (1.200)</td><td rowspan="2" align="center">64 (0.750)<br>+133 bp</td>
+<td rowspan="2" align="center">15/28</td>
+<td rowspan="2" align="center">3.3</td>
+<td rowspan="2" align="center">38.5%</td>
+<td align="center" class="junction_gene">noncoding&nbsp;(53/74&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>trnfM</i></td>
+<td class="junction_gene">tRNA&#8209;fMet(cat)</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_375.html">?</a></td><td rowspan="1" class="junction_gene">contig_7</td>
+<td align="center" class="junction_gene">175967&nbsp;=</td>
+<td align="center" class="junction_gene">1075 (1.200)</td><td align="center" class="junction_gene">noncoding&nbsp;(17/74&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>trnfM</i></td>
+<td class="junction_gene">tRNA&#8209;fMet(cat)</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_378.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_378.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_7</td>
+<td align="center" class="junction_gene">=&nbsp;176496</td><td align="center" class="junction_gene">902 (1.010)</td><td rowspan="2" align="center">133 (0.780)<br>+119 bp</td>
+<td rowspan="2" align="center">33/56</td>
+<td rowspan="2" align="center">3.9</td>
+<td rowspan="2" align="center">43.5%</td>
+<td align="center" class="junction_gene">noncoding&nbsp;(53/74&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>trnfM</i></td>
+<td class="junction_gene">tRNA&#8209;fMet(cat)</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_378.html">?</a></td><td rowspan="1" class="junction_gene">contig_7</td>
+<td align="center" class="junction_gene">176498&nbsp;=</td>
+<td align="center" class="junction_gene">915 (1.030)</td><td align="center" class="junction_gene">noncoding&nbsp;(51/74&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>trnfM</i></td>
+<td class="junction_gene">tRNA&#8209;fMet(cat)</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_374.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_374.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_7</td>
+<td align="center" class="junction_gene">=&nbsp;175931</td><td align="center" class="junction_gene">1075 (1.200)</td><td rowspan="2" align="center">133 (0.780)<br>+119 bp</td>
+<td rowspan="2" align="center">33/56</td>
+<td rowspan="2" align="center">3.9</td>
+<td rowspan="2" align="center">39.4%</td>
+<td align="center" class="junction_gene">noncoding&nbsp;(53/74&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>trnfM</i></td>
+<td class="junction_gene">tRNA&#8209;fMet(cat)</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_374.html">?</a></td><td rowspan="1" class="junction_gene">contig_7</td>
+<td align="center" class="junction_gene">175933&nbsp;=</td>
+<td align="center" class="junction_gene">1071 (1.200)</td><td align="center" class="junction_gene">noncoding&nbsp;(51/74&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>trnfM</i></td>
+<td class="junction_gene">tRNA&#8209;fMet(cat)</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_343.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_343.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_27</td>
+<td align="center" class="junction_gene">=&nbsp;1006</td><td align="center" class="junction_gene">4146 (0.880)</td><td rowspan="2" align="center">3573 (1.240)<br>+57 bp</td>
+<td rowspan="2" align="center">135/180</td>
+<td rowspan="2" align="center">5.4</td>
+<td rowspan="2" align="center">58.4%</td>
+<td align="center" class="junction_gene">noncoding&nbsp;(839/1561&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>rrs</i></td>
+<td class="junction_gene">16S ribosomal RNA</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_343.html">?</a></td><td rowspan="1" class="junction_gene">contig_27</td>
+<td align="center" class="junction_gene">1065&nbsp;=</td>
+<td align="center" class="junction_gene">4175 (0.890)</td><td align="center" class="junction_gene">noncoding&nbsp;(898/1561&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>rrs</i></td>
+<td class="junction_gene">16S ribosomal RNA</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_317.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_317.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_17</td>
+<td align="center" class="junction_gene">=&nbsp;28114</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">302 (0.490)</td>
+<td rowspan="2" align="center">73/294</td>
+<td rowspan="2" align="center">10.4</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;93/&#8211;)</td>
+<td align="center" class="junction_gene"><i>CKPBAK_02856/&#8211;</i></td>
+<td class="junction_gene">C protein alpha&#8209;antigen/&#8211;</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_317.html">?</a></td><td rowspan="1" class="junction_gene">contig_38</td>
+<td align="center" class="junction_gene">=&nbsp;326</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8211;)</td>
+<td align="center" class="junction_gene"><i>&#8211;/&#8211;</i></td>
+<td class="junction_gene">&#8211;/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_321.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_321.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_18</td>
+<td align="center" class="junction_gene">12597&nbsp;=</td><td align="center" class="junction_gene">1256 (1.310)</td><td rowspan="2" align="center">428 (0.510)</td>
+<td rowspan="2" align="center">105/264</td>
+<td rowspan="2" align="center">17.6</td>
+<td rowspan="2" align="center">43.1%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+338/&#8209;350)</td>
+<td align="center" class="junction_gene"><i>pucR/codB</i></td>
+<td class="junction_gene">PucR family transcriptional regulator/Cytosine permease, putative</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_321.html">?</a></td><td rowspan="1" class="junction_gene">contig_4</td>
+<td align="center" class="junction_gene">=&nbsp;326149</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(+387/&#8211;)</td>
+<td align="center" class="junction_gene"><i>ndh/&#8211;</i></td>
+<td class="junction_gene">NADH:ubiquinone reductase (non&#8209;electrogenic)/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_377.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_377.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_7</td>
+<td align="center" class="junction_gene">=&nbsp;176484</td><td align="center" class="junction_gene">913 (1.020)</td><td rowspan="2" align="center">89 (0.410)<br>+111 bp</td>
+<td rowspan="2" align="center">17/72</td>
+<td rowspan="2" align="center">18.0</td>
+<td rowspan="2" align="center">28.4%</td>
+<td align="center" class="junction_gene">noncoding&nbsp;(65/74&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>trnfM</i></td>
+<td class="junction_gene">tRNA&#8209;fMet(cat)</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_377.html">?</a></td><td rowspan="1" class="junction_gene">contig_7</td>
+<td align="center" class="junction_gene">176498&nbsp;=</td>
+<td align="center" class="junction_gene">915 (1.030)</td><td align="center" class="junction_gene">noncoding&nbsp;(51/74&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>trnfM</i></td>
+<td class="junction_gene">tRNA&#8209;fMet(cat)</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_373.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_373.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_7</td>
+<td align="center" class="junction_gene">=&nbsp;175919</td><td align="center" class="junction_gene">1089 (1.220)</td><td rowspan="2" align="center">89 (0.410)<br>+111 bp</td>
+<td rowspan="2" align="center">17/72</td>
+<td rowspan="2" align="center">18.0</td>
+<td rowspan="2" align="center">25.2%</td>
+<td align="center" class="junction_gene">noncoding&nbsp;(65/74&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>trnfM</i></td>
+<td class="junction_gene">tRNA&#8209;fMet(cat)</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_373.html">?</a></td><td rowspan="1" class="junction_gene">contig_7</td>
+<td align="center" class="junction_gene">175933&nbsp;=</td>
+<td align="center" class="junction_gene">1071 (1.200)</td><td align="center" class="junction_gene">noncoding&nbsp;(51/74&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>trnfM</i></td>
+<td class="junction_gene">tRNA&#8209;fMet(cat)</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_380.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_380.html">?</a></td>
+<td rowspan="1" class="junction_gene">contig_7</td>
+<td align="center" class="junction_gene">=&nbsp;176530</td><td align="center" class="junction_gene">901 (1.010)</td><td rowspan="2" align="center">72 (0.320)<br>+110 bp</td>
+<td rowspan="2" align="center">14/74</td>
+<td rowspan="2" align="center">21.0</td>
+<td rowspan="2" align="center">23.9%</td>
+<td align="center" class="junction_gene">noncoding&nbsp;(19/74&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>trnfM</i></td>
+<td class="junction_gene">tRNA&#8209;fMet(cat)</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_380.html">?</a></td><td rowspan="1" class="junction_gene">contig_7</td>
+<td align="center" class="junction_gene">176543&nbsp;=</td>
+<td align="center" class="junction_gene">917 (1.030)</td><td align="center" class="junction_gene">noncoding&nbsp;(6/74&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>trnfM</i></td>
+<td class="junction_gene">tRNA&#8209;fMet(cat)</td>
+</tr>
+</table>
+</body></html>

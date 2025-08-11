@@ -1,0 +1,4 @@
+Fri Feb 28 11:39:33 2025
+
+breseq -j 16 -r BTF74T-7.gbff -o ./BTF74 BTF74T-6_R1-trimmed.fastq.gz BTF74T-6_R2-trimmed.fastq.gz
+
